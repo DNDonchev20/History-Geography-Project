@@ -5,10 +5,14 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: Roboto;
+}
+
 .heroic {
   background-image: url("../Images/bgimg.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 85vh;
 }
 
@@ -33,7 +37,6 @@ li a {
   display: flex;
   color: #FFF3E4;
   text-decoration: none;
-  font-family: Roboto;
   text-align: center;
   font-size: 20px;
   font-weight: 900;
@@ -100,7 +103,7 @@ img {
 .containerChild {
   margin-bottom: 200px;
   margin-top: 200px;
-  width: 50%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,16 +111,13 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-self: center;
-  padding-left: 200px;
   color: #483434;
-  font-weight: 600;
 }
 
 .compContainerChild {
   margin-bottom: 200px;
   margin-top: 200px;
-  width: 50%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,14 +125,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-self: center;
-  padding-left: 5%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: #483434;
-  font-weight: 600;
 }
 
 .childOne {
   width: 500px;
+  margin-top: 25px;
 }
 
 .childTwo {
@@ -141,9 +142,9 @@ img {
 }
 
 .childThree {
-  margin-top: 50px;
-  height: 50px;
-  width: 200px;
+  margin-top: 40px;
+  height: 60px;
+  width: 250px;
   background-color: #6B4F4F;
   color: #FFF3E4;
   border: 5px solid #483434;
@@ -235,37 +236,155 @@ img {
   }
   .containerChild {
     padding-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
   }
   .compContainerChild {
     padding-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
   }
   .container {
-    height: 135vh;
+    height: 160vh;
   }
   .compContainer {
-    height: 135vh;
+    height: 160vh;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
+  .heroic {
+    height: 50vh;
+  }
+  li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    height: 180vh;
+  }
+  .compContainer {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    height: 160vh;
+  }
+  .compContainer {
+    height: 160vh;
+  }
+  img {
+    width: 700px;
+  }
+  .heroic {
+    height: 38vh;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .container {
+    height: 140vh;
+  }
+  .compContainer {
+    height: 140vh;
+  }
+  img {
+    width: 650px;
+  }
+  .heroic {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  img {
+    width: 600px;
+  }
+  .container {
+    height: 140vh;
+  }
+  .compContainer {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .heroic {
+    height: 35vh;
+  }
+  img {
+    width: 550px;
+    height: 550px;
+  }
+  .childOne {
+    width: 500px;
+  }
+  .childTwo {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .heroic {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  img {
+    width: 450px;
+    height: 450px;
+  }
   .containerChild {
-    padding-left: 150px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: 10px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .compContainerChild {
-    padding-left: 150px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: 10px;
+  }
+  .container {
+    height: 110vh;
+  }
+  .compContainer {
+    height: 110vh;
+  }
+  .childOne {
+    width: 300px;
+  }
+  .childTwo {
+    width: 300px;
+  }
+  .childThree {
+    margin-left: 0;
   }
 }
 
-@media screen and (max-width: 760px) {
-  .container {
-    height: 100vh;
+@media screen and (max-width: 465px) {
+  img {
+    width: 400px;
+    height: 400px;
   }
-  .compContainer {
-    height: 50vh;
+}
+
+@media screen and (max-width: 420px) {
+  img {
+    width: 350px;
+    height: 350px;
+  }
+  .childOne {
+    width: 275px;
+  }
+  .childTwo {
+    width: 275px;
   }
 }
 /*# sourceMappingURL=style.css.map */
