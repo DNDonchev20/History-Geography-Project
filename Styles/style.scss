@@ -14,7 +14,7 @@ body{
 }
 
 .heroic{
-    background-image: url("../Images/bgimg.jpg");
+    background-image: url("../../images/bgimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
@@ -88,6 +88,7 @@ img{
 
   margin: 2%;
 }
+
 .map{
   width: 850px;
   height: 625px;
@@ -288,7 +289,7 @@ img{
     height: 160vh;
   }
 
-  img{
+  .map{
     width: 700px;
   }
 
@@ -306,7 +307,7 @@ img{
     height: 140vh;
   }
 
-  img{
+  .map{
     width: 650px;
   }
 
@@ -316,7 +317,7 @@ img{
 }
 
 @media screen and(max-width: 665px) {
-  img{
+  .map{
     width: 600px;
   }
 
@@ -334,7 +335,7 @@ img{
     height: 35vh;
   }
 
-  img{
+  .map{
     width: 550px;
     height: 550px;
   }
@@ -352,10 +353,15 @@ img{
   .heroic{
     height: 30vh;
   }
+
+  .map{
+    width: 500px;
+    height: 500px;
+  }
 }
 
 @media screen and(max-width: 545px) {
-  img{
+  .map{
     width: 450px;
     height: 450px;
   }
@@ -394,14 +400,14 @@ img{
 
 
 @media screen and(max-width: 465px) {
-  img{
+  .map{
     width: 400px;
     height: 400px;
   }
 }
 
 @media screen and(max-width: 420px) {
-  img{
+  .map{
     width: 350px;
     height: 350px;
   }
