@@ -206,12 +206,10 @@ img {
     height: fit-content;
   }
   .containerChild {
-    padding-left: 150px;
     margin-top: 25px;
     margin-bottom: 0;
   }
   .compContainerChild {
-    padding-left: 150px;
     margin-top: 25px;
     margin-bottom: 0;
     margin-left: 0;
@@ -221,12 +219,6 @@ img {
 @media screen and (max-width: 1337px) {
   .heroic {
     height: 78vh;
-  }
-  .containerChild {
-    padding-left: 60px;
-  }
-  .compContainerChild {
-    padding-left: 60px;
   }
 }
 
@@ -417,6 +409,7 @@ img {
   }
   .childThree {
     margin-left: 0;
+    height: 50px;
   }
 }
 
