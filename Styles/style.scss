@@ -61,8 +61,9 @@ li a {
 
 .container{
   width: 100%;
-  height: 75vh;
-
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: $compMainColor;
 
   display: flex;
@@ -72,8 +73,9 @@ li a {
 
 .compContainer{
   width: 100%;
-  height: 75vh;
-
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: $mainColor;
 
   display: flex;
@@ -153,9 +155,11 @@ img{
 
 .mainContainer{
   width: 100%;
-  height: 85vh;
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
 
-  background-color: aquamarine;
+  background-color: $mainColor;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -166,14 +170,14 @@ img{
     flex-direction: column;
     justify-content: center;
 
-    height: 160vh;
+    height: fit-content;
   }
 
   .compContainer{
     flex-direction: column;
     justify-content: center;
  
-    height: 160vh;
+    height: fit-content;
    }
   
   .containerChild{
@@ -252,11 +256,11 @@ img{
   }
 
   .container{
-    height: 160vh;
+    height: fit-content;;
   }
 
   .compContainer{
-    height: 160vh;
+    height: fit-content;;
   }
 }
 
@@ -272,21 +276,21 @@ img{
 }
 @media screen and(max-width: 920px) {
   .container{
-    height: 180vh;
+    height: fit-content;
   }
 
   .compContainer{
-    height: 180vh;
+    height: fit-content;
   }
 }
 
 @media screen and(max-width: 860px) {
   .container{
-    height: 160vh;
+    height: fit-content;
   }
 
   .compContainer{
-    height: 160vh;
+    height: fit-content;
   }
 
   .map{
@@ -300,11 +304,11 @@ img{
 
 @media screen and(max-width: 710px) {
   .container{
-    height: 140vh;
+    height: fit-content;
   }
 
   .compContainer{
-    height: 140vh;
+    height: fit-content;
   }
 
   .map{
@@ -322,11 +326,11 @@ img{
   }
 
   .container{
-    height: 140vh;
+    height: fit-content;
   }
 
   .compContainer{
-    height: 140vh;
+    height: fit-content;
   }
 }
 
@@ -377,11 +381,11 @@ img{
   }
 
   .container{
-    height: 110vh;
+    height: fit-content;
   }
 
   .compContainer{
-    height: 110vh;
+    height: fit-content;
   }
 
   .childOne{
@@ -434,35 +438,29 @@ img{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 96.7%;
   position: relative;
   margin: auto;
+  margin-left: -0.59%;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 22px;
+  width: 22px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: $compMainColor;
+  border: $secondaryColor solid 2px;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.dot:hover{
+  background-color: $compSecondaryColor;
+}
 .active {
-  background-color: #717171;
+  background-color: $secondaryColor;
 }
 
 /* Fading animation */

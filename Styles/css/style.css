@@ -58,7 +58,11 @@ li a {
 
 .container {
   width: 100%;
-  height: 75vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #FFF3E4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +77,11 @@ li a {
 
 .compContainer {
   width: 100%;
-  height: 75vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #EED6C4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,8 +169,12 @@ img {
 
 .mainContainer {
   width: 100%;
-  height: 85vh;
-  background-color: aquamarine;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #EED6C4;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -176,7 +188,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
     -webkit-box-orient: vertical;
@@ -186,7 +200,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .containerChild {
     padding-left: 150px;
@@ -253,10 +269,14 @@ img {
     font-size: 16px;
   }
   .container {
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -271,19 +291,27 @@ img {
 
 @media screen and (max-width: 920px) {
   .container {
-    height: 180vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
-    height: 180vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
 @media screen and (max-width: 860px) {
   .container {
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
-    height: 160vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .map {
     width: 700px;
@@ -295,10 +323,14 @@ img {
 
 @media screen and (max-width: 710px) {
   .container {
-    height: 140vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
-    height: 140vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .map {
     width: 650px;
@@ -313,10 +345,14 @@ img {
     width: 600px;
   }
   .container {
-    height: 140vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
-    height: 140vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -362,10 +398,14 @@ img {
     font-size: 10px;
   }
   .container {
-    height: 110vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .compContainer {
-    height: 110vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .childOne {
     width: 300px;
@@ -410,36 +450,31 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 96.7%;
   position: relative;
   margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  margin-left: -0.59%;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 22px;
+  width: 22px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #FFF3E4;
+  border: #483434 solid 2px;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
+.dot:hover {
+  background-color: #6B4F4F;
+}
+
 .active {
-  background-color: #717171;
+  background-color: #483434;
 }
 
 /* Fading animation */

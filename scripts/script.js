@@ -21,7 +21,7 @@ function showSlidesAuto() {
   }
   else{
       pauseAuto = 0;
-      setTimeout(showSlidesAuto, 30000); //Wait 30 seconds before continuing on auto
+      setTimeout(showSlidesAuto, 15000); //Wait 15 seconds before continuing on auto
   }
 }
 
