@@ -25,7 +25,7 @@ body {
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#login {
+#register {
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid #EED6C4;
@@ -120,20 +120,20 @@ input[type="submit"]:hover {
   transition: .5s;
 }
 
-.registerDirectory {
+.loginDirectory {
   margin: 30px 0;
   text-align: center;
   font-size: 16px;
   color: #666666;
 }
 
-.registerDirectory a {
+.loginDirectory a {
   color: #2691d9;
   text-decoration: none;
   margin-left: 2px;
 }
 
-.registerDirectory a:hover {
+.loginDirectory a:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=login.css.map */
