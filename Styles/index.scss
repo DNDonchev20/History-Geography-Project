@@ -3,6 +3,8 @@ $compMainColor: #FFF3E4;
 $secondaryColor: #483434;
 $compSecondaryColor: #6B4F4F;
 
+@import url(footer.css);
+
 *{
   margin: 0;
   padding: 0;
@@ -20,9 +22,9 @@ body{
     height: 85vh;
 }
 
-li{
-    float:left;
-    list-style-type: none;
+#center li{
+  float:left;
+  list-style: none;
 }
 
 .cloud{
@@ -38,13 +40,13 @@ li{
   color: $compMainColor;
 }
 
-li a {
+#center li a {
   display: flex;
   
   color: $compMainColor;
 
   text-decoration: none;
-  
+  font-family:  Roboto;
   text-align: center;
   font-size: 20px;
   font-weight: 900;
@@ -58,6 +60,8 @@ li a {
   align-items: center;
   justify-content: center;
 }
+
+
 
 .container{
   width: 100%;
@@ -165,6 +169,18 @@ img{
   background-size: cover;
 }
 
+@media screen and(max-width:1510px){
+  #center li a{
+    font-size: 20px;
+    padding: 22px 21px;
+    margin: auto;
+  }
+
+  #center{
+    padding-left: 5%;
+  }
+  
+}
 
 @media screen and(max-width: 1450px) {
   .container{
@@ -199,6 +215,9 @@ img{
 @media screen and(max-width: 1337px) {
   .heroic{
     height: 78vh;
+  }
+  .cloud{
+    padding-left: 10%;
   }
 }
 
@@ -259,6 +278,7 @@ img{
 }
 
 
+
 @media screen and(max-width: 960px) {
   .heroic{
     height: 50vh;
@@ -291,10 +311,29 @@ img{
     width: 700px;
   }
 
+  #center li a{
+    padding: 10px 17px;
+  }
+
+  .cloud{
+    margin-top: 4%;
+    font-size:36px;
+  }
+
   .heroic{
     height: 38vh;
   }
 }
+
+@media screen and(max-width:780px){
+  #center li a{
+    font-size: 17px;
+    padding: 10px 15px;
+    margin: auto;
+  }
+  
+}
+
 
 @media screen and(max-width: 710px) {
   .container{
@@ -312,6 +351,19 @@ img{
   .heroic{
     height: 40vh;
   }
+}
+
+@media screen and(max-width:670px){
+  #center li a{
+    font-size: 16px;
+    padding: 10px 9px;
+    margin: auto;
+  }
+
+  #center{
+    padding-left: 45px;
+  }
+  
 }
 
 @media screen and(max-width: 665px) {
@@ -395,15 +447,63 @@ img{
     height: 50px;
   }
   
+  .cloud{
+    margin-top: 1%;
+    font-size: 28px;
+  }
+  
 }
 
+@media screen and(max-width: 515px) {
+  .cloud{
+    margin-top: 3%;
+    padding-left: 17%;
+    font-size: 25px;
+  }
+
+  #center li a{
+    padding: 7px 9px;
+  }
+
+}
+
+@media screen and(max-width:470px){
+  #center li a{
+    font-size: 14.5px;
+    padding: 7px 7px;
+    margin: auto;
+  }
+
+  #center{
+    padding-left: 45px;
+  }
+  .heroic{
+    height: 30vh;
+  }
+  
+}
 
 @media screen and(max-width: 465px) {
   .map{
     width: 400px;
     height: 400px;
   }
+
+  .cloud{
+    margin-top: 3%;
+    padding-left: 28%;
+    font-size: 25px;
+  }
+
+  #center li a{
+    padding: 7px 9px;
+  }
+
+  #center{
+    padding-left: 23%;
+  }
 }
+
 
 @media screen and(max-width: 420px) {
   .map{
@@ -419,7 +519,6 @@ img{
     width: 275px;
   }
 }
-
 
 
 .mySlides {
