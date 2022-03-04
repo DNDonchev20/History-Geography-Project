@@ -204,7 +204,10 @@ footer p {
 
 @media (max-width: 990px) {
   footer {
-    padding: 40px;
+    padding: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer .holder {
     -webkit-box-orient: vertical;
@@ -216,11 +219,12 @@ footer p {
     margin-right: 0;
     margin-bottom: 40px;
   }
-  footer .holder .sec.aboutus, .quickLinks, .contact {
-    width: 100%;
+  .aboutus, .quickLinks, .contact {
+    width: 50%;
+    margin-left: 32%;
   }
   .footer-bottom {
-    padding: 8px 40px;
+    padding: 8px 20px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

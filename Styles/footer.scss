@@ -4,12 +4,12 @@ $secondaryColor: #483434;
 $compSecondaryColor: #6B4F4F;
 
 
-  #center li{
-      float:left;
-  }
+#center li{
+    float:left;
+}
 
-  .cloud{
-    text-decoration: none;
+.cloud{
+	text-decoration: none;
     text-align: center;
 
     font-family:  Roboto;
@@ -19,10 +19,10 @@ $compSecondaryColor: #6B4F4F;
     margin-top:6%;
 
     color: $compMainColor;
-  }
+}
 
-  #center li a {
-    display: flex;
+#center li a {
+	display: flex;
     
     color: $compMainColor;
 
@@ -51,7 +51,6 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 }
 
 footer .holder{
@@ -192,8 +191,9 @@ footer p{
 }
 
 @media(max-width: 990px){
-    footer{
-          padding: 40px;
+	footer{
+          padding: 30px;
+		  justify-content: center;
       }
   
       footer .holder{
@@ -205,11 +205,12 @@ footer p{
           margin-bottom: 40px;
       }
   
-      footer .holder .sec.aboutus, .quickLinks, .contact{
-          width: 100%;
+      .aboutus, .quickLinks, .contact{
+          width: 50%;
+		  margin-left: 32%;
       }
   
       .footer-bottom{
-          padding: 8px 40px;
+          padding: 8px 20px;
       }
-  }
+}
