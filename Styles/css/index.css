@@ -17,6 +17,11 @@ body {
   height: 85vh;
 }
 
+.center {
+  width: 100%;
+  background-color: black;
+}
+
 #center li {
   float: left;
   list-style: none;
@@ -56,6 +61,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#signIn {
+  position: absolute;
+  margin-right: -60%;
 }
 
 .container {
