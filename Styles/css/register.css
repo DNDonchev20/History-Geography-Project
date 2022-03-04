@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,16 +14,17 @@ body {
 
 .center {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: -4%;
   margin-bottom: 8%;
+  margin-left: -0.5%;
 }
 
 .container {
@@ -32,10 +33,10 @@ body {
   border-radius: 10px;
   border-color: #483434;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#login {
+#register {
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid #EED6C4;
@@ -44,7 +45,7 @@ body {
 .center form {
   padding: 0 40px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 form .UserInput {
@@ -66,7 +67,7 @@ form .UserInput {
 .UserInput label {
   position: absolute;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   top: 50%;
   left: 5px;
   color: #483434;
@@ -127,24 +128,24 @@ input[type="submit"]:hover {
   transition: .5s;
 }
 
-.registerDirecory {
+.loginDirecory {
   margin: 30px 0;
   text-align: center;
   font-size: 16px;
   color: #666666;
 }
 
-.registerDirectory p {
+.loginDirectory p {
   padding-bottom: 5%;
 }
 
-.registerDirecory a {
+.loginDirecory a {
   color: #2691d9;
   text-decoration: none;
   margin-left: 2px;
 }
 
-.registerDirecory a:hover {
+.loginDirecory a:hover {
   text-decoration: none;
 }
 
@@ -162,4 +163,4 @@ input {
     margin-top: 0;
   }
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=register.css.map */
