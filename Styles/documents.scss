@@ -18,13 +18,17 @@ html{
 }
 
 body{
-  background:$compSecondaryColor;
+  background-image: url("../../images/oldphoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 
 img{
   display: flexbox;
   width: 100%;
+  
   
 }
 

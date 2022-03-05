@@ -12,7 +12,10 @@ html {
 }
 
 body {
-  background: #6B4F4F;
+  background-image: url("../../images/oldphoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
