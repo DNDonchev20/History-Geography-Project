@@ -21,6 +21,8 @@ body {
 img {
   display: flexbox;
   width: 100%;
+  border: 10px solid #6B4F4F;
+  border-radius: 5px;
 }
 
 .wrapper {

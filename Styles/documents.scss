@@ -28,7 +28,8 @@ body{
 img{
   display: flexbox;
   width: 100%;
-  
+  border: 10px solid $compSecondaryColor;
+  border-radius: 5px;
   
 }
 
