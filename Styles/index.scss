@@ -15,6 +15,10 @@ body{
   font-family:  Roboto;
 }
 
+.map{
+  background-image: url("../../images/map.svg");
+  background-size: cover;
+}
 .heroic{
     background-image: url("../../images/bgimg.jpg");
     background-repeat: no-repeat;
@@ -101,17 +105,6 @@ img{
   height: 625px;
 
   margin: 2%;
-}
-
-.map{
-  width: 850px;
-  height: 625px;
-
-  margin: 2%;
-
-  border: 5px solid $secondaryColor;
-  border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .containerChild{
@@ -394,7 +387,7 @@ img{
   }
 
   .map{
-    width: 550px;
+    width: 625px;
     height: 550px;
   }
 
