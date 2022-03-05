@@ -1,9 +1,7 @@
-var userCount = 0;
+function register(e) {
+  e.preventDefault();
 
-function register() {
-  userCount = Number(localStorage.getItem("Users Count"));
-  localStorage.setItem("Users Count", userCount);
-
+  const users = JSON.parse(localStorage.getItem("users")) || [];
   if (
     !checkPass(
       document.getElementById("Pass").value,
@@ -11,36 +9,32 @@ function register() {
     )
   ) {
     alert("Password and Confirm Password don't match!\nPlease try Again!");
-    return false;
-  }
+  } else {
+    let user = new User(
+      document.getElementById("Username").value,
+      document.getElementById("Email").value,
+      document.getElementById("Pass").value
+    );
 
-  let user = new User(
-    document.getElementById("Username").value,
-    document.getElementById("Email").value,
-    document.getElementById("Pass").value
-  );
+    if (availableUsername(user.Username) && availableEmail(user.Email)) {
+      users.push(user);
 
-  if (availableUsername(user.Username) && availableEmail(user.Email)) {
-    let user_stringified = JSON.stringify(user);
-    localStorage.setItem("#" + userCount + "User", user_stringified);
-
-    ++userCount;
-    localStorage.setItem("Users Count", userCount);
-    return true;
-  } else if (availableUsername(user.Username) == false) {
-    alert("An account with that username already exists!");
-    return false;
-  } else if (availableEmail(user.Email) == false) {
-    alert("An account with that Email already exists!");
-    return false;
+      localStorage.setItem("users", JSON.stringify(users));
+      alert("Successfully registered!");
+      window.location = "login.html";
+    } else if (availableUsername(user.Username) == false) {
+      alert("An account with that username already exists!");
+    } else if (availableEmail(user.Email) == false) {
+      alert("An account with that Email already exists!");
+    }
   }
 }
 
 function availableUsername(nameToCheck) {
-  let user;
-  for (var i = 0; i < userCount; i++) {
-    user = JSON.parse(localStorage.getItem("#" + i + "User"));
-    if (nameToCheck == user.Username) {
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+
+  for (var i = 0; i < users.length; i++) {
+    if (nameToCheck == users[i].Username) {
       return false;
     }
   }
@@ -48,10 +42,9 @@ function availableUsername(nameToCheck) {
 }
 
 function availableEmail(emailToCheck) {
-  let user;
-  for (var i = 0; i < userCount; i++) {
-    user = JSON.parse(localStorage.getItem("#" + i + "User"));
-    if (emailToCheck == user.Email) {
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  for (var i = 0; i < users.length; i++) {
+    if (emailToCheck == users[i].Email) {
       return false;
     }
   }
@@ -61,3 +54,7 @@ function availableEmail(emailToCheck) {
 function checkPass(pass, confirmPass) {
   return pass == confirmPass;
 }
+
+var registerForm = document.querySelector("#registerForm");
+
+registerForm.addEventListener("submit", register);
