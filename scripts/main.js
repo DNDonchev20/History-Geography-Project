@@ -58,3 +58,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function getCurrentUser() {
+  const currentUser = JSON.parse(localStorage.getItem("currentUser")) || null;
+  const loggedUser = document.getElementById("loggedUser");
+  if(currentUser != null) {
+    loggedUser.innerHTML = `&nbsp;${currentUser.Username}`;
+  } else {
+    loggedUser.innerHTML = '&nbsp;Guest';
+  }
+}
+
+window.addEventListener("DOMContentLoaded", getCurrentUser);

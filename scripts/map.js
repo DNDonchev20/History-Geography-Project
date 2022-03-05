@@ -67,7 +67,7 @@ var drawStar = function (context, o = {}) {
   
   function render() {
       //add more drawMap calls to draw each map
-    drawMap("map", //mapId
+    drawMap("map1", //mapId
     function (context) {
       const items = [];
       //star drawing begin
