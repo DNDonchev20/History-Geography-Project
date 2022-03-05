@@ -18,9 +18,15 @@ html{
 }
 
 body{
-  background: $compSecondaryColor;
+  background:$compSecondaryColor;
+  
 }
 
+img{
+  display: flexbox;
+  width: 100%;
+  
+}
 
 .wrapper{
   max-width: 1080px;
@@ -53,16 +59,7 @@ body{
   padding: 20px;
   position: relative;
 }
-.wrapper .row section::before{
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  background: $mainColor;
-  top: 28px;
-  z-index: -1;
-  transform: rotate(45deg);
-}
+
 .chilOne section::before{
   right: -7px;
 }

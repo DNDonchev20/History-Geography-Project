@@ -15,6 +15,11 @@ body {
   background: #6B4F4F;
 }
 
+img {
+  display: flexbox;
+  width: 100%;
+}
+
 .wrapper {
   max-width: 1080px;
   margin: 50px auto;
@@ -57,18 +62,6 @@ body {
   width: calc(50% - 40px);
   padding: 20px;
   position: relative;
-}
-
-.wrapper .row section::before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  background: #EED6C4;
-  top: 28px;
-  z-index: -1;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 .chilOne section::before {
