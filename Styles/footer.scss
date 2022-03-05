@@ -4,6 +4,12 @@ $secondaryColor: #483434;
 $compSecondaryColor: #6B4F4F;
 
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 #center li{
     float:left;
 }
