@@ -40,10 +40,10 @@ body{
 .wrapper .row{
   display: flex;
 }
-.wrapper .row-1{
+.wrapper .childOne{
   justify-content: flex-start;
 }
-.wrapper .row-2{
+.wrapper .childTwo{
   justify-content: flex-end;
 }
 .wrapper .row section{
@@ -63,10 +63,10 @@ body{
   z-index: -1;
   transform: rotate(45deg);
 }
-.row-1 section::before{
+.chilOne section::before{
   right: -7px;
 }
-.row-2 section::before{
+.childOne section::before{
   left: -7px;
 }
 .row section .icon,
@@ -88,11 +88,11 @@ body{
   font-size: 25px;
   transform: translateX(-50%);
 }
-.row-1 section .icon{
+.childOne section .icon{
   top: 15px;
   right: -60px;
 }
-.row-2 section .icon{
+.childTwo section .icon{
   top: 15px;
   left: -60px;
 }
@@ -132,10 +132,10 @@ body{
   .wrapper .row section{
     width: 100%;
   }
-  .row-1 section::before{
+  .childOne section::before{
     left: -7px;
   }
-  .row-1 section .icon{
+  .childOne section .icon{
     left: -60px;
   }
 }
