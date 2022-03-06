@@ -37,17 +37,27 @@
             <label>Last name</label>
           </div>
           <div class="UserInput">
-            <input type="text" id="Email" required />
+            <input type="text" id="Email" required pattern="\w+@+\w+.+\w+" />
             <span></span>
             <label>E-mail</label>
           </div>
           <div class="UserInput">
-            <input type="password" id="Pass" required />
+            <input
+              type="password"
+              id="Pass"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
             <span></span>
             <label>Password</label>
           </div>
           <div class="UserInput">
-            <input type="password" id="confirmPass" required />
+            <input
+              type="password"
+              id="confirmPass"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
             <span></span>
             <label>Confirm password</label>
           </div>

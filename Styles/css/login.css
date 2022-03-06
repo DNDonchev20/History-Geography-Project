@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #6B4F4F;
+  background: #6b4f4f;
 }
 
 .center {
@@ -28,7 +28,7 @@ body {
 
 .container {
   width: 400px;
-  background-color: #FFF3E4;
+  background-color: #fff3e4;
   border-radius: 10px;
   border-color: #483434;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -38,7 +38,7 @@ body {
 #login {
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid #EED6C4;
+  border-bottom: 1px solid #eed6c4;
 }
 
 .center form {
@@ -49,7 +49,7 @@ body {
 
 form .UserInput {
   position: relative;
-  border-bottom: 2px solid #EED6C4;
+  border-bottom: 2px solid #eed6c4;
   margin: 30px 0;
 }
 
@@ -72,20 +72,20 @@ form .UserInput {
   color: #483434;
   font-size: 16px;
   pointer-events: none;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .UserInput span::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 40px;
   left: 0;
   width: 0%;
   height: 2px;
   background: #483434;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .UserInput input:focus ~ label,
@@ -123,8 +123,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   border-color: #483434;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .registerDirecory {
@@ -146,10 +146,6 @@ input[type="submit"]:hover {
 
 .registerDirecory a:hover {
   text-decoration: none;
-}
-
-input {
-  margin-bottom: 15px;
 }
 
 .logo {

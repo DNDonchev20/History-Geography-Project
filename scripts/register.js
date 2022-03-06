@@ -11,9 +11,9 @@ function register(e) {
     alert("Password and Confirm Password don't match!\nPlease try Again!");
   } else {
     let user = new User(
-      document.getElementById("Username").value,
-      document.getElementById("Email").value,
-      document.getElementById("Pass").value
+      btoa(document.getElementById("Username").value),
+      btoa(document.getElementById("Email").value),
+      btoa(document.getElementById("Pass").value)
     );
 
     if (availableUsername(user.Username) && availableEmail(user.Email)) {
@@ -34,7 +34,7 @@ function availableUsername(nameToCheck) {
   const users = JSON.parse(localStorage.getItem("users")) || [];
 
   for (var i = 0; i < users.length; i++) {
-    if (nameToCheck == users[i].Username) {
+    if (nameToCheck == atob(users[i].Username)) {
       return false;
     }
   }
@@ -44,7 +44,7 @@ function availableUsername(nameToCheck) {
 function availableEmail(emailToCheck) {
   const users = JSON.parse(localStorage.getItem("users")) || [];
   for (var i = 0; i < users.length; i++) {
-    if (emailToCheck == users[i].Email) {
+    if (emailToCheck == atob(users[i].Email)) {
       return false;
     }
   }

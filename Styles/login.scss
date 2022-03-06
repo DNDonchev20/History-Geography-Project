@@ -1,33 +1,33 @@
-$mainColor: #EED6C4;
-$compMainColor: #FFF3E4;
+$mainColor: #eed6c4;
+$compMainColor: #fff3e4;
 $secondaryColor: #483434;
-$compSecondaryColor: #6B4F4F;
+$compSecondaryColor: #6b4f4f;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
 
 @import url(footer.css);
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   background: $compSecondaryColor;
 }
 
-.center{
+.center {
   justify-content: center;
- align-items: center;
- display: flex;
- 
- margin-top: -4%;
- margin-bottom: 8%;
+  align-items: center;
+  display: flex;
+
+  margin-top: -4%;
+  margin-bottom: 8%;
 }
 
-.container{
+.container {
   width: 400px;
 
   background-color: $compMainColor;
@@ -35,27 +35,29 @@ body{
   border-radius: 10px;
   border-color: $secondaryColor;
 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#login{
+#login {
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid $mainColor;
 }
 
-.center form{
+.center form {
   padding: 0 40px;
   box-sizing: border-box;
 }
 
-form .UserInput{
+form .UserInput {
   position: relative;
   border-bottom: 2px solid $mainColor;
   margin: 30px 0;
 }
 
-.UserInput input{
+.UserInput input {
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -65,7 +67,7 @@ form .UserInput{
   background: none;
   outline: none;
 }
-.UserInput label{
+.UserInput label {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -75,45 +77,44 @@ form .UserInput{
 
   font-size: 16px;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.UserInput span::before{
-  content: '';
+.UserInput span::before {
+  content: "";
   position: absolute;
 
   top: 40px;
   left: 0;
   width: 0%;
   height: 2px;
-
   background: $secondaryColor;
 
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .UserInput input:focus ~ label,
-.UserInput input:valid ~ label{
+.UserInput input:valid ~ label {
   top: -5px;
   color: $secondaryColor;
 }
 
 .UserInput input:focus ~ span::before,
-.UserInput input:valid ~ span::before{
+.UserInput input:valid ~ span::before {
   width: 100%;
 }
 
-.pass{
+.pass {
   margin: -5px 0 20px 5px;
   color: $secondaryColor;
   cursor: pointer;
 }
 
-.pass:hover{
+.pass:hover {
   text-decoration: underline;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   width: 100%;
   height: 50px;
   border: 1px solid;
@@ -125,45 +126,41 @@ input[type="submit"]{
   cursor: pointer;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
   border-color: $secondaryColor;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.registerDirecory{
+.registerDirecory {
   margin: 30px 0;
-  
+
   text-align: center;
   font-size: 16px;
   color: #666666;
 }
 
-.registerDirectory p{
+.registerDirectory p {
   padding-bottom: 5%;
 }
 
-.registerDirecory a{
+.registerDirecory a {
   color: #2691d9;
   text-decoration: none;
-  
+
   margin-left: 2px;
 }
 
-.registerDirecory a:hover{
+.registerDirecory a:hover {
   text-decoration: none;
 }
 
-input{
-  margin-bottom: 15px;
-}
-
-.logo{
+.logo {
   margin: 30px;
   max-height: 150px;
 }
 
-@media screen and(max-width: 800px){
-  .center{
-      margin-top: 0;
+@media screen and(max-width: 800px) {
+  .center {
+    margin-top: 0;
   }
 }
