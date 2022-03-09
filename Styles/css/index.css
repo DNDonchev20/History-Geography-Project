@@ -12,7 +12,8 @@ body {
 
 .map {
   background-image: url("../../images/map.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .heroic {
@@ -39,14 +40,14 @@ body {
   font-size: 40px;
   font-weight: 900;
   margin-top: 6%;
-  color: #FFF3E4;
+  color: #fff3e4;
 }
 
 #center li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #FFF3E4;
+  color: #fff3e4;
   text-decoration: none;
   font-family: Roboto;
   text-align: center;
@@ -80,7 +81,7 @@ body {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #FFF3E4;
+  background-color: #fff3e4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +100,7 @@ body {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #EED6C4;
+  background-color: #eed6c4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,8 +168,8 @@ img {
   margin-top: 40px;
   height: 60px;
   width: 250px;
-  background-color: #6B4F4F;
-  color: #FFF3E4;
+  background-color: #6b4f4f;
+  color: #fff3e4;
   border: 5px solid #483434;
   border-radius: 20px;
   display: block;
@@ -182,7 +183,7 @@ img {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #EED6C4;
+  background-color: #eed6c4;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -403,7 +404,6 @@ img {
   }
   .map {
     width: 625px;
-    height: 550px;
   }
   .childOne {
     width: 500px;
@@ -419,14 +419,12 @@ img {
   }
   .map {
     width: 500px;
-    height: 500px;
   }
 }
 
 @media screen and (max-width: 545px) {
   .map {
     width: 450px;
-    height: 450px;
   }
   .containerChild {
     font-size: 10px;
@@ -492,7 +490,6 @@ img {
 @media screen and (max-width: 465px) {
   .map {
     width: 400px;
-    height: 400px;
   }
   .cloud {
     margin-top: 3%;
@@ -510,7 +507,6 @@ img {
 @media screen and (max-width: 420px) {
   .map {
     width: 350px;
-    height: 350px;
   }
   .childOne {
     width: 275px;
@@ -543,7 +539,7 @@ img {
   height: 22px;
   width: 22px;
   margin: 0 2px;
-  background-color: #FFF3E4;
+  background-color: #fff3e4;
   border: #483434 solid 2px;
   border-radius: 50%;
   display: inline-block;
@@ -552,7 +548,7 @@ img {
 }
 
 .dot:hover {
-  background-color: #6B4F4F;
+  background-color: #6b4f4f;
 }
 
 .active {
@@ -569,7 +565,7 @@ img {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -578,7 +574,7 @@ img {
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;

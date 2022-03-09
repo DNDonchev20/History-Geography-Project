@@ -1,61 +1,62 @@
-$mainColor: #EED6C4;
-$compMainColor: #FFF3E4;
+$mainColor: #eed6c4;
+$compMainColor: #fff3e4;
 $secondaryColor: #483434;
-$compSecondaryColor: #6B4F4F;
+$compSecondaryColor: #6b4f4f;
 
 @import url(footer.css);
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family:  Roboto;
+body {
+  font-family: Roboto;
 }
 
-.map{
+.map {
   background-image: url("../../images/map.svg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.heroic{
-    background-image: url("../../images/bgimg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 85vh;
+.heroic {
+  background-image: url("../../images/bgimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
 }
 
-.center{
+.center {
   width: 100%;
   background-color: black;
 }
 
-#center li{
-  float:left;
+#center li {
+  float: left;
   list-style: none;
 }
 
-.cloud{
+.cloud {
   text-decoration: none;
   text-align: center;
 
-  font-family:  Roboto;
+  font-family: Roboto;
   font-size: 40px;
   font-weight: 900;
 
-  margin-top:6%;
+  margin-top: 6%;
 
   color: $compMainColor;
 }
 
 #center li a {
   display: flex;
-  
+
   color: $compMainColor;
 
   text-decoration: none;
-  font-family:  Roboto;
+  font-family: Roboto;
   text-align: center;
   font-size: 20px;
   font-weight: 900;
@@ -64,18 +65,18 @@ body{
   margin: auto;
 }
 
-#center{
-  display:flex;
+#center {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#signIn{
+#signIn {
   position: absolute;
   margin-right: -60%;
 }
 
-.container{
+.container {
   width: 100%;
   height: fit-content;
   padding-top: 2%;
@@ -87,7 +88,7 @@ body{
   justify-content: space-evenly;
 }
 
-.compContainer{
+.compContainer {
   width: 100%;
   height: fit-content;
   padding-top: 2%;
@@ -100,14 +101,14 @@ body{
   flex-direction: row-reverse;
 }
 
-img{
+img {
   width: 850px;
   height: 625px;
 
   margin: 2%;
 }
 
-.containerChild{
+.containerChild {
   margin-bottom: 200px;
   margin-top: 200px;
 
@@ -119,7 +120,7 @@ img{
   color: $secondaryColor;
 }
 
-.compContainerChild{
+.compContainerChild {
   margin-bottom: 200px;
   margin-top: 200px;
   margin-left: 175px;
@@ -133,17 +134,17 @@ img{
   color: $secondaryColor;
 }
 
-.childOne{
-  width: 500px; 
+.childOne {
+  width: 500px;
   margin-top: 25px;
 }
 
-.childTwo{
-  width: 500px; 
+.childTwo {
+  width: 500px;
   margin-top: 50px;
 }
 
-.childThree{
+.childThree {
   margin-top: 40px;
 
   height: 60px;
@@ -154,12 +155,12 @@ img{
 
   border: 5px solid $secondaryColor;
   border-radius: 20px;
-  
+
   display: block;
   margin-left: 23%;
 }
 
-.mainContainer{
+.mainContainer {
   width: 100%;
   height: fit-content;
   padding-top: 2%;
@@ -170,43 +171,39 @@ img{
   background-size: cover;
 }
 
-@media screen and(max-width:1510px){
-  #center li a{
+@media screen and(max-width:1510px) {
+  #center li a {
     font-size: 20px;
     padding: 22px 21px;
     margin: auto;
   }
 
-  #center{
+  #center {
     padding-left: 5%;
   }
-  
 }
 
 @media screen and(max-width: 1450px) {
-  .container{
+  .container {
     flex-direction: column;
     justify-content: center;
 
     height: fit-content;
   }
 
-  .compContainer{
+  .compContainer {
     flex-direction: column;
     justify-content: center;
- 
+
     height: fit-content;
-   }
-  
-  .containerChild{
-    
+  }
+
+  .containerChild {
     margin-top: 25px;
     margin-bottom: 0;
   }
 
-  .compContainerChild{
-
-
+  .compContainerChild {
     margin-top: 25px;
     margin-bottom: 0;
     margin-left: 0;
@@ -214,46 +211,46 @@ img{
 }
 
 @media screen and(max-width: 1337px) {
-  .heroic{
+  .heroic {
     height: 78vh;
   }
-  .cloud{
+  .cloud {
     padding-left: 10%;
   }
 }
 
 @media screen and(max-width: 1225px) {
-  .heroic{
+  .heroic {
     height: 73vh;
   }
 
-  .containerChild{
+  .containerChild {
     padding-left: 50px;
   }
 
-  .compContainerChild{
+  .compContainerChild {
     padding-left: 50px;
   }
 }
 
 @media screen and(max-width: 1150px) {
-  .heroic{
+  .heroic {
     height: 68vh;
   }
 }
 
 @media screen and(max-width: 1070px) {
-  .heroic{
+  .heroic {
     height: 65vh;
   }
 }
 
 @media screen and(max-width: 1025px) {
-  .heroic{
+  .heroic {
     height: 60vh;
   }
 
-  .containerChild{
+  .containerChild {
     padding-left: 25px;
     margin-top: 0;
     margin-bottom: 0;
@@ -261,7 +258,7 @@ img{
     font-size: 16px;
   }
 
-  .compContainerChild{
+  .compContainerChild {
     padding-left: 25px;
     margin-top: 0;
     margin-bottom: 0;
@@ -269,19 +266,17 @@ img{
     font-size: 16px;
   }
 
-  .container{
-    height: fit-content;;
+  .container {
+    height: fit-content;
   }
 
-  .compContainer{
-    height: fit-content;;
+  .compContainer {
+    height: fit-content;
   }
 }
 
-
-
 @media screen and(max-width: 960px) {
-  .heroic{
+  .heroic {
     height: 50vh;
   }
 
@@ -290,237 +285,229 @@ img{
   }
 }
 @media screen and(max-width: 920px) {
-  .container{
+  .container {
     height: fit-content;
   }
 
-  .compContainer{
+  .compContainer {
     height: fit-content;
   }
 }
 
 @media screen and(max-width: 860px) {
-  .container{
+  .container {
     height: fit-content;
   }
 
-  .compContainer{
+  .compContainer {
     height: fit-content;
   }
 
-  .map{
+  .map {
     width: 700px;
   }
 
-  #center li a{
+  #center li a {
     padding: 10px 17px;
   }
 
-  .cloud{
+  .cloud {
     margin-top: 4%;
-    font-size:36px;
+    font-size: 36px;
   }
 
-  .heroic{
+  .heroic {
     height: 38vh;
   }
 }
 
-@media screen and(max-width:780px){
-  #center li a{
+@media screen and(max-width:780px) {
+  #center li a {
     font-size: 17px;
     padding: 10px 15px;
     margin: auto;
   }
-  
 }
 
-
 @media screen and(max-width: 710px) {
-  .container{
+  .container {
     height: fit-content;
   }
 
-  .compContainer{
+  .compContainer {
     height: fit-content;
   }
 
-  .map{
+  .map {
     width: 650px;
   }
 
-  .heroic{
+  .heroic {
     height: 40vh;
   }
 }
 
-@media screen and(max-width:670px){
-  #center li a{
+@media screen and(max-width:670px) {
+  #center li a {
     font-size: 16px;
     padding: 10px 9px;
     margin: auto;
   }
 
-  #center{
+  #center {
     padding-left: 45px;
   }
-  
 }
 
 @media screen and(max-width: 665px) {
-  .map{
+  .map {
     width: 600px;
   }
 
-  .container{
+  .container {
     height: fit-content;
   }
 
-  .compContainer{
+  .compContainer {
     height: fit-content;
   }
 }
 
 @media screen and(max-width: 635px) {
-  .heroic{
+  .heroic {
     height: 35vh;
   }
 
-  .map{
+  .map {
     width: 625px;
-    height: 550px;
+    //height: 550px;
   }
 
-  .childOne{
+  .childOne {
     width: 500px;
   }
 
-  .childTwo{
+  .childTwo {
     width: 500px;
   }
 }
 
 @media screen and(max-width: 550px) {
-  .heroic{
+  .heroic {
     height: 30vh;
   }
 
-  .map{
+  .map {
     width: 500px;
-    height: 500px;
+    //height: 500px;
   }
 }
 
 @media screen and(max-width: 545px) {
-  .map{
+  .map {
     width: 450px;
-    height: 450px;
+    //height: 450px;
   }
 
-  .containerChild{
+  .containerChild {
     font-size: 10px;
     width: 100%;
     align-items: center;
   }
 
-  .compContainerChild{
+  .compContainerChild {
     font-size: 10px;
   }
 
-  .container{
+  .container {
     height: fit-content;
   }
 
-  .compContainer{
+  .compContainer {
     height: fit-content;
   }
 
-  .childOne{
+  .childOne {
     width: 300px;
   }
 
-  .childTwo{
+  .childTwo {
     width: 300px;
   }
 
-  .childThree{
+  .childThree {
     margin-left: 0;
     height: 50px;
   }
-  
-  .cloud{
+
+  .cloud {
     margin-top: 1%;
     font-size: 28px;
   }
-  
 }
 
 @media screen and(max-width: 515px) {
-  .cloud{
+  .cloud {
     margin-top: 3%;
     padding-left: 17%;
     font-size: 25px;
   }
 
-  #center li a{
+  #center li a {
     padding: 7px 9px;
   }
-
 }
 
-@media screen and(max-width:470px){
-  #center li a{
+@media screen and(max-width:470px) {
+  #center li a {
     font-size: 14.5px;
     padding: 7px 7px;
     margin: auto;
   }
 
-  #center{
+  #center {
     padding-left: 45px;
   }
-  .heroic{
+  .heroic {
     height: 30vh;
   }
-  
 }
 
 @media screen and(max-width: 465px) {
-  .map{
+  .map {
     width: 400px;
-    height: 400px;
+    //height: 400px;
   }
 
-  .cloud{
+  .cloud {
     margin-top: 3%;
     padding-left: 28%;
     font-size: 25px;
   }
 
-  #center li a{
+  #center li a {
     padding: 7px 9px;
   }
 
-  #center{
+  #center {
     padding-left: 23%;
   }
 }
 
-
 @media screen and(max-width: 420px) {
-  .map{
+  .map {
     width: 350px;
-    height: 350px;
+    //height: 350px;
   }
 
-  .childOne{
+  .childOne {
     width: 275px;
   }
 
-  .childTwo{
+  .childTwo {
     width: 275px;
   }
 }
-
 
 .mySlides {
   display: none;
@@ -539,7 +526,6 @@ img{
   margin-left: -0.59%;
 }
 
-
 /* The dots/bullets/indicators */
 .dot {
   height: 22px;
@@ -551,7 +537,7 @@ img{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.dot:hover{
+.dot:hover {
   background-color: $compSecondaryColor;
 }
 .active {
@@ -567,16 +553,26 @@ img{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }

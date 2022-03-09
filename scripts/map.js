@@ -71,30 +71,48 @@ function render() {
     "map1", //mapId
     function (context) {
       const items = [];
+      //Germany
+      const Star1 = new Star(330, 350, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+      //USSR
+      const Star2 = new Star(600, 300, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
+      //Britain
+      const Star3 = new Star(180, 300, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
+      //Italy
+      const Star4 = new Star(310, 490, 15, 6, 5, 2.5, "#f06d06", "#fed8b1", 60);
+      //France
+      const Star5 = new Star(200, 400, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
 
-      const Star1 = new Star(500, 300, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
       //star drawing begin
-      console.log(Star1);
       const star1 = drawStar(context, Star1);
-      items.push(star1); //push the drawn star to the items list
-      const Star2 = new Star(200, 100, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
       const star2 = drawStar(context, Star2);
+      const star3 = drawStar(context, Star3);
+      const star4 = drawStar(context, Star4);
+      const star5 = drawStar(context, Star5);
+
+      //push the drawn star to the items list
+      items.push(star1);
       items.push(star2);
+      items.push(star3);
+      items.push(star4);
+      items.push(star5);
 
       return items;
     },
     [
       {
-        text: "Country 0 info",
+        text: "Germany info",
       },
       {
-        text: "Country 1 info",
+        text: "USSR info",
       },
       {
-        text: "Country 2 info",
+        text: "Britain info",
       },
       {
-        text: "Country 3 info",
+        text: "Italy info",
+      },
+      {
+        text: "France info",
       },
     ]
   );
