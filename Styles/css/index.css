@@ -11,13 +11,13 @@ body {
 }
 
 .map {
-  background-image: url("../../images/map.svg");
+  background-image: url("../../Images/map.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .heroic {
-  background-image: url("../../images/bgimg.jpg");
+  background-image: url("../../Images/backgroundImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
