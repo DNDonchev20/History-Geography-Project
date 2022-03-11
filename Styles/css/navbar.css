@@ -21,8 +21,11 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  margin-top: -12%;
 }
 
+/* changed this from the tutorial video to
+   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -141,6 +144,17 @@ nav a:hover {
     grid-column: 2 / 3;
   }
   nav {
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
