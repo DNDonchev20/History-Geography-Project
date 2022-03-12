@@ -15,11 +15,37 @@ body {
   font-family: Roboto;
 }
 
-.map {
-  background-image: url("../../Images/map.svg");
+button{
+  width: 155px;
+  height: 60px;
+
+  font-size: 24px;
+
+  background-color: $compSecondaryColor;
+  border-color: $compSecondaryColor;
+  border-radius: 5px;
+
+  color: $compMainColor
+}
+
+
+.map{
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+#map1 {
+  background-image: url("../../Images/map.svg");
+}
+
+#map2 {
+  background-image: url("../../Images/Asia1939.svg");
+}
+
+#map3{
+  background-image: url("../../Images/America.svg");
+}
+
 .heroic {
   background-image: url("../../Images/backgroundImage.jpg");
   background-repeat: no-repeat;
@@ -81,11 +107,48 @@ body {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: $compMainColor;
+
+  background-image:url("../../Images/woodWall.png");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.infoContainer{
+  width: 100%;
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: $mainColor;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.infoBoxContainer
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-bottom: 2%;
+}
+
+.boxContainer{
+  height: 400px;
+  width: 300px;
+
+  padding: 50px;
+
+  background-color: $compSecondaryColor;
 }
 
 .compContainer {
@@ -93,7 +156,12 @@ body {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: $mainColor;
+
+  background-image:url("../../Images/woodWall.png");
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
 
   display: flex;
   align-items: center;
@@ -134,39 +202,13 @@ img {
   color: $secondaryColor;
 }
 
-.childOne {
-  width: 500px;
-  margin-top: 25px;
-}
-
-.childTwo {
-  width: 500px;
-  margin-top: 50px;
-}
-
-.childThree {
-  margin-top: 40px;
-
-  height: 60px;
-  width: 250px;
-
-  background-color: $compSecondaryColor;
-  color: $compMainColor;
-
-  border: 5px solid $secondaryColor;
-  border-radius: 20px;
-
-  display: block;
-  margin-left: 23%;
-}
-
 .mainContainer {
   width: 100%;
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
 
-  background-color: $mainColor;
+  background-color: $compMainColor;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -344,6 +386,18 @@ img {
 
   .heroic {
     height: 40vh;
+  }
+
+  .infoBoxContainer{
+    flex-direction: column;
+  }
+
+  .boxContainer{
+    margin-bottom: 50px;
+  }
+
+  .europeButtons{
+    margin-bottom: 50px;
   }
 }
 

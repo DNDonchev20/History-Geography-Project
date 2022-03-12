@@ -10,10 +10,31 @@ body {
   font-family: Roboto;
 }
 
+button {
+  width: 155px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #6b4f4f;
+  border-color: #6b4f4f;
+  border-radius: 5px;
+  color: #fff3e4;
+}
+
 .map {
-  background-image: url("../../Images/map.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#map1 {
+  background-image: url("../../Images/map.svg");
+}
+
+#map2 {
+  background-image: url("../../Images/Asia1939.svg");
+}
+
+#map3 {
+  background-image: url("../../Images/America.svg");
 }
 
 .heroic {
@@ -81,7 +102,29 @@ body {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #fff3e4;
+  background-image: url("../../Images/woodWall.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.infoContainer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #eed6c4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +134,31 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.infoBoxContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+
+.boxContainer {
+  height: 400px;
+  width: 300px;
+  padding: 50px;
+  background-color: #6b4f4f;
 }
 
 .compContainer {
@@ -100,7 +168,11 @@ body {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #eed6c4;
+  background-image: url("../../Images/woodWall.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,28 +226,6 @@ img {
   color: #483434;
 }
 
-.childOne {
-  width: 500px;
-  margin-top: 25px;
-}
-
-.childTwo {
-  width: 500px;
-  margin-top: 50px;
-}
-
-.childThree {
-  margin-top: 40px;
-  height: 60px;
-  width: 250px;
-  background-color: #6b4f4f;
-  color: #fff3e4;
-  border: 5px solid #483434;
-  border-radius: 20px;
-  display: block;
-  margin-left: 23%;
-}
-
 .mainContainer {
   width: 100%;
   height: -webkit-fit-content;
@@ -183,7 +233,7 @@ img {
   height: fit-content;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #eed6c4;
+  background-color: #fff3e4;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -368,6 +418,18 @@ img {
   }
   .heroic {
     height: 40vh;
+  }
+  .infoBoxContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxContainer {
+    margin-bottom: 50px;
+  }
+  .europeButtons {
+    margin-bottom: 50px;
   }
 }
 
