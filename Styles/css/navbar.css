@@ -1,31 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
-:root {
-  --background: rgba(0, 214, 170, .85);
-}
-
-*, *::before, *::after {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  background: #222;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-}
-
 header {
-  background: var(--background);
+  background: #483434;
   text-align: center;
   position: fixed;
   z-index: 999;
   width: 100%;
-  margin-top: -12%;
 }
 
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
@@ -33,7 +19,7 @@ header {
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(173, 216, 230, 0.75);
+  outline: 3px solid #483434;
 }
 
 .nav-toggle-label {
@@ -80,8 +66,8 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--background);
   width: 100%;
+  background: #483434;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
   -webkit-transform-origin: top;
@@ -104,7 +90,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #eed6c4;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -114,7 +100,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: #fff3e4;
 }
 
 .nav-toggle:checked ~ nav {
@@ -128,6 +114,15 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+@media screen and (max-width: 800px) {
+  .logo {
+    color: #eed6c4;
+  }
+  header {
+    margin-top: -12%;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -135,16 +130,14 @@ nav a:hover {
   header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr auto minmax(600px, 3fr) 1fr;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    -ms-grid-columns: 1fr auto minmax(200px, 0.5fr) 1fr;
+        grid-template-columns: 1fr auto minmax(200px, 0.5fr) 1fr;
+    margin-top: -12%;
   }
   .logo {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
+    color: #eed6c4;
   }
   nav {
-    /* the following lines are not from my video, but add Edge support */
     position: relative;
     text-align: left;
     -webkit-transition: none;
@@ -154,7 +147,6 @@ nav a:hover {
     background: none;
     top: initial;
     left: initial;
-    /* end Edge support stuff */
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
@@ -185,7 +177,7 @@ nav a:hover {
     content: '';
     display: block;
     height: 5px;
-    background: black;
+    background: #eed6c4;
     position: absolute;
     top: -.75em;
     left: 0;
