@@ -25,7 +25,8 @@ button{
   border-color: $compSecondaryColor;
   border-radius: 5px;
 
-  color: $compMainColor
+  color: $compMainColor;
+  margin-right: 15px
 }
 
 
@@ -434,15 +435,18 @@ img {
 
   .map {
     width: 625px;
-    //height: 550px;
   }
+}
 
-  .childOne {
-    width: 500px;
+@media screen and(max-width: 610px) {
+  .map {
+    width: 600px;
   }
+}
 
-  .childTwo {
-    width: 500px;
+@media screen and(max-width: 575px) {
+  .map {
+    width: 560px;
   }
 }
 
@@ -452,15 +456,13 @@ img {
   }
 
   .map {
-    width: 500px;
-    //height: 500px;
+    width: 540px;
   }
 }
 
 @media screen and(max-width: 545px) {
   .map {
     width: 450px;
-    //height: 450px;
   }
 
   .containerChild {
@@ -479,19 +481,6 @@ img {
 
   .compContainer {
     height: fit-content;
-  }
-
-  .childOne {
-    width: 300px;
-  }
-
-  .childTwo {
-    width: 300px;
-  }
-
-  .childThree {
-    margin-left: 0;
-    height: 50px;
   }
 
   .cloud {
@@ -529,8 +518,7 @@ img {
 
 @media screen and(max-width: 465px) {
   .map {
-    width: 400px;
-    //height: 400px;
+    width: 350px;
   }
 
   .cloud {
@@ -550,26 +538,18 @@ img {
 
 @media screen and(max-width: 420px) {
   .map {
-    width: 350px;
-    //height: 350px;
+    width: 3250px;
   }
 
-  .childOne {
-    width: 275px;
+  .mySlides {
+    display: none;
   }
 
-  .childTwo {
-    width: 275px;
+  .carousel {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
   }
-}
-
-.mySlides {
-  display: none;
-}
-.carousel {
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
 }
 
 /* Slideshow container */

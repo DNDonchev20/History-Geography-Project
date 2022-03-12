@@ -18,6 +18,7 @@ button {
   border-color: #6b4f4f;
   border-radius: 5px;
   color: #fff3e4;
+  margin-right: 15px;
 }
 
 .map {
@@ -467,11 +468,17 @@ img {
   .map {
     width: 625px;
   }
-  .childOne {
-    width: 500px;
+}
+
+@media screen and (max-width: 610px) {
+  .map {
+    width: 600px;
   }
-  .childTwo {
-    width: 500px;
+}
+
+@media screen and (max-width: 575px) {
+  .map {
+    width: 560px;
   }
 }
 
@@ -480,7 +487,7 @@ img {
     height: 30vh;
   }
   .map {
-    width: 500px;
+    width: 540px;
   }
 }
 
@@ -507,16 +514,6 @@ img {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-  }
-  .childOne {
-    width: 300px;
-  }
-  .childTwo {
-    width: 300px;
-  }
-  .childThree {
-    margin-left: 0;
-    height: 50px;
   }
   .cloud {
     margin-top: 1%;
@@ -551,7 +548,7 @@ img {
 
 @media screen and (max-width: 465px) {
   .map {
-    width: 400px;
+    width: 350px;
   }
   .cloud {
     margin-top: 3%;
@@ -568,24 +565,16 @@ img {
 
 @media screen and (max-width: 420px) {
   .map {
-    width: 350px;
+    width: 3250px;
   }
-  .childOne {
-    width: 275px;
+  .mySlides {
+    display: none;
   }
-  .childTwo {
-    width: 275px;
+  .carousel {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
   }
-}
-
-.mySlides {
-  display: none;
-}
-
-.carousel {
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
 }
 
 /* Slideshow container */
