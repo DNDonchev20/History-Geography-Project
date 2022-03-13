@@ -1,4 +1,5 @@
 @import url(footer.css);
+@import url(navbar.css);
 * {
   margin: 0;
   padding: 0;
@@ -45,16 +46,6 @@ button {
   height: 85vh;
 }
 
-.center {
-  width: 100%;
-  background-color: black;
-}
-
-#center li {
-  float: left;
-  list-style: none;
-}
-
 .cloud {
   text-decoration: none;
   text-align: center;
@@ -63,32 +54,6 @@ button {
   font-weight: 900;
   margin-top: 6%;
   color: #fff3e4;
-}
-
-#center li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff3e4;
-  text-decoration: none;
-  font-family: Roboto;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-  padding: 16px 25px;
-  margin: auto;
-}
-
-#center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #signIn {
@@ -565,7 +530,7 @@ img {
 
 @media screen and (max-width: 420px) {
   .map {
-    width: 3250px;
+    width: 325px;
   }
   .mySlides {
     display: none;
