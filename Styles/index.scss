@@ -208,7 +208,7 @@ button{
 }
 
 #map1 {
-  background-image: url("../../Images/map.svg");
+  background-image: url("../../Images/europe_1939.svg");
 }
 
 #map2 {
@@ -674,9 +674,11 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .dot:hover {
   background-color: $compSecondaryColor;
 }
+
 .active {
   background-color: $secondaryColor;
 }
@@ -704,6 +706,13 @@ img {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+  .carousel{
+    height: 95%;
+  }
+}
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
