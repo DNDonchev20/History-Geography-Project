@@ -3,6 +3,7 @@ $compMainColor: #fff3e4;
 $secondaryColor: #483434;
 $compSecondaryColor: #6b4f4f;
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 @import url(footer.css);
 
 *{
@@ -14,17 +15,6 @@ $compSecondaryColor: #6b4f4f;
 
 body{
   background: $mainColor;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-$mainColor: #eed6c4;
-$compMainColor: #fff3e4;
-$secondaryColor: #483434;
-$compSecondaryColor: #6b4f4f;
-
-*{
-  box-sizing: border-box;
 }
 
 header {

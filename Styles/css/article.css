@@ -142,7 +142,7 @@ article {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-image: url("../../images/articleBackground.jpg");
+  background-image: url("../../images/Article/articleBackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -282,4 +282,4 @@ h1, h3 {
     width: 300px;
   }
 }
-/*# sourceMappingURL=purge_article.css.map */
+/*# sourceMappingURL=article.css.map */
