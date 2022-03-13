@@ -250,7 +250,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1550px) {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -609,9 +609,9 @@ img {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
+          animation-name: fade;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {

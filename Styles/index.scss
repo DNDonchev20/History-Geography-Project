@@ -200,7 +200,7 @@ img {
   }
 }
 
-@media screen and(max-width: 1450px) {
+@media screen and(max-width: 1550px) {
   .container {
     flex-direction: column;
     justify-content: center;
@@ -554,8 +554,6 @@ img {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
