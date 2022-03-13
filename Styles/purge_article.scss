@@ -4,28 +4,21 @@ $secondaryColor: #483434;
 $compSecondaryColor: #6b4f4f;
 
 @import url(footer.css);
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Patrick Hand', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-  background: $mainColor;
+    background-color: $compSecondaryColor;
+    color: $compSecondaryColor;
+
+    font-family: 'Patrick Hand', cursive;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-$mainColor: #eed6c4;
-$compMainColor: #fff3e4;
-$secondaryColor: #483434;
-$compSecondaryColor: #6b4f4f;
-
-*{
-  box-sizing: border-box;
-}
 
 header {
   background: $secondaryColor;
@@ -125,77 +118,52 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.container{
-  padding: 0 40px;
+.centering{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10%;
-  margin-top: 12%;
-  
-  
-}
-.card{
-  height: 280px;
-  max-width: 350px;
-  margin: 0 20px;
-  background: $secondaryColor;
-  transition: 0.4s;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
-.card:hover{
-  height: 470px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-}
-.card .img{
-  height: 200px;
-  width: 100%;
-}
-.card .img img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.card .top-text{
-  padding: 5px;
-}
-.card .top-text .name{
-  font-size: 25px;
-  font-weight: 600;
-  color: $mainColor;
+  justify-content: center;
 }
 
-.card .bottom-text{
-  padding: 0 20px 10px 20px;
-  margin-top: 5px;
-  background: $secondaryColor;
-  opacity: 0;
-  color: $mainColor;
-  visibility: hidden;
-  transition: 0.1s;
+article{
+  margin-top: 8%;
+  margin-bottom: 5%;
+
+  width: 50%;
+  height: fit-content;
+
+  background-image: url("../../images/articleBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  padding: 25px;
 }
-.card:hover .bottom-text{
-  opacity: 1;
-  visibility: visible;
+
+h1, h3{
+    text-align: center;
+    
 }
-.card .bottom-text .text{
-  text-align: justify;
+
+.articleInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
 }
-.card .bottom-text .btn{
-  margin: 10px 0;
-  text-align: left;
+
+.imgInfo{
+    max-width: 600px;
+    height: 250px;
+
+    margin: 10px;
 }
-.card .bottom-text .btn a{
-  text-decoration: none;
-  background: $compSecondaryColor;
-  color: $mainColor;
-  padding: 5px 8px;
-  border-radius: 3px;
-  display: inline-flex;
-  transition: 0.2s;
-}
-.card .bottom-text .btn a:hover{
-  transform: scale(0.9);
+
+@media screen and(max-width: 835px){
+    article{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -205,9 +173,6 @@ nav a:hover {
     
   }
 
-  header{
-    margin-top: -12%;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -218,13 +183,14 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 1fr auto 1.2fr 1fr;
-    margin-top:-12%;
+    grid-template-columns: 1fr auto  1.2fr 1fr;
+
   }
   
   .logo {
     color: $mainColor;
-    padding: 5px;
+    padding:5px;
+    
   }
   
   nav {
@@ -276,13 +242,26 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 978px) {
-  .container{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .card{
-    max-width: 700px;
-    margin: 20px 0;
-  }
+@media screen and(max-width: 600px){
+    article{
+        width: 80%;
+    }
+}
+
+
+@media screen and(max-width: 500px){
+    article{
+        width: 90%;
+    }
+
+    .imgInfo{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media screen and(max-width: 380px){
+    .imgInfo{
+        width: 300px;
+    }
 }
