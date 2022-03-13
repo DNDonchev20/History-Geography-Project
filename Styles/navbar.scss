@@ -5,8 +5,6 @@ $compMainColor: #fff3e4;
 $secondaryColor: #483434;
 $compSecondaryColor: #6b4f4f;
 
-
-
 *{
   box-sizing: border-box;
 }
@@ -136,13 +134,10 @@ nav a:hover {
   }
   
   .logo {
-    
-    
     color: $mainColor;
   }
   
   nav {
-    
     position: relative;
     text-align: left;
     transition: none;

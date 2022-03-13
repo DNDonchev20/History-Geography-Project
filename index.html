@@ -1,105 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles/css/index.css">
+    <link rel="icon" href="images/Logo.png">
+
+    <title>Home</title>
   
-        <title>Home</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="Styles/css/index.css">
-        <link rel="icon" href="images/Logo.png">
+  </head>
   
-    </head>
-  
-    <body>
+  <body>
   
     <div class="heroic">
      
-     <div class="center">
+      <header>
 
-        <ul id="center">
-  
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#news">Off topic</a></li>
-        <li><a href="Pages/Login.html">Login</a></li>
-        <li id='signIn'><a href="#about">Sign in as: <span id="loggedUser"></span></a></li>
-  
-    </ul>
+        <h1 class="logo">Logo</h1>
 
-    </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
-    <p class="cloud">Sample</p>
+        <nav>
+
+           <ul>
+
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+
+           </ul>
+
+        </nav>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+
+           <span></span>
+
+        </label>
+
+     </header>
+
+      <p class="cloud">Sample</p>
 
     </div>
 
     <div class="mainContainer">
+
       <div class="slideshow-container">
 
-         <div class="mySlides fade">
-           <img class="carousel" src="Images/Carousel/firstMap.png" style="width:100%">
-         </div>
-         
-         <div class="mySlides fade">
-           <img class="carousel" src="Images/Carousel/secondMap.png" style="width:100%">
-         </div>
-         
-         <div class="mySlides fade">
-           <img class="carousel" src="Images/Carousel/thirdMap.png" style="width:100%">
-         </div>
+        <div class="mySlides fade">
 
-         <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/fourthMap.png" style="width:100%">
-          </div>
+          <img class="carousel" src="Images/Carousel/firstMap.png" style="width:100%">
+
+        </div>
+         
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/secondMap.png" style="width:100%">
+
+        </div>
+         
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/thirdMap.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/fourthMap.png" style="width:100%">
+
+        </div>
           
-          <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/fifthMap.png" style="width:100%">
-          </div>
+        <div class="mySlides fade">
 
-          <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/sixthMap.png" style="width:100%">
-          </div>
+          <img class="carousel" src="Images/Carousel/fifthMap.png" style="width:100%">
 
-          <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/seventhMap.png" style="width:100%">
-          </div>
+        </div>
+
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/sixthMap.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/seventhMap.png" style="width:100%">
+
+        </div>
           
-          <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/eighthMap.png" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/ninthMap.png" style="width:100%">
-          </div>
+        <div class="mySlides fade">
 
-          <div class="mySlides fade">
-            <img class="carousel" src="Images/Carousel/tenthMap.png" style="width:100%">
-          </div>
+          <img class="carousel" src="Images/Carousel/eighthMap.png" style="width:100%">
+
+        </div>
+          
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/ninthMap.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <img class="carousel" src="Images/Carousel/tenthMap.png" style="width:100%">
+
+        </div>
          
-         </div>
-         <br>
+      </div>
+        
+      <br>
          
-         <div style="text-align:center">
-           <span class="dot"onclick="currentSlide(1)"></span> 
-           <span class="dot"onclick="currentSlide(2)"></span> 
-           <span class="dot"onclick="currentSlide(3)"></span> 
-           <span class="dot"onclick="currentSlide(4)"></span> 
-           <span class="dot"onclick="currentSlide(5)"></span> 
-           <span class="dot"onclick="currentSlide(6)"></span> 
-           <span class="dot"onclick="currentSlide(7)"></span> 
-           <span class="dot"onclick="currentSlide(8)"></span> 
-           <span class="dot"onclick="currentSlide(9)"></span> 
-           <span class="dot"onclick="currentSlide(10)"></span> 
-         </div>
+      <div style="text-align:center">
+
+        <span class="dot"onclick="currentSlide(1)"></span> 
+        <span class="dot"onclick="currentSlide(2)"></span> 
+        <span class="dot"onclick="currentSlide(3)"></span> 
+        <span class="dot"onclick="currentSlide(4)"></span> 
+        <span class="dot"onclick="currentSlide(5)"></span> 
+        <span class="dot"onclick="currentSlide(6)"></span> 
+        <span class="dot"onclick="currentSlide(7)"></span> 
+        <span class="dot"onclick="currentSlide(8)"></span> 
+        <span class="dot"onclick="currentSlide(9)"></span> 
+        <span class="dot"onclick="currentSlide(10)"></span> 
+           
+      </div>
          
     </div>
 
     <div class="infoContainer">
+
       <div class="infoBoxContainer">
 
         <div class="boxContainer">
@@ -115,107 +155,130 @@
       <div class="infoBoxContainer">
 
         <div class="europeButtons">
+
           <button>Europe 1939</button>
           <button>Europe 1945</button>
+
         </div>
         
         <div class="asiaButtons">
+
           <button>Asia 1939</button>
           <button>Asia 1945</button>
+
         </div>
+
       </div>
+
     </div>
 
     <div class='container'>
+
       <canvas id="map1" class="map" width="800px" height="700px"></canvas>
       <img class="map" src="images/gun.png" alt="gun" width="800px">
+      
     </div>
 
     <div class='compContainer'>
-       <canvas id="map2" class="map" width="800px" height="700px" ></canvas>
 
-       <img class="map" src="images/sword.png" alt="">
-       </div>
+      <canvas id="map2" class="map" width="800px" height="700px" ></canvas>
+      <img class="map" src="images/sword.png" alt="">
 
-       <div class='container'>
-        <canvas id="map3" class="map" width="800px" height="700px"></canvas>
-       </div>
+    </div>
 
-       <footer> 
+    <div class='container'>
+
+      <canvas id="map3" class="map" width="800px" height="700px"></canvas>
+
+    </div>
+
+    <footer> 
        
-        <div class="holder">
+      <div class="holder">
 
-            <div class="sec aboutus">
+        <div class="sec aboutus">
 
-                <h2>About Us</h2>
+          <h2>About Us</h2>
 
-                <p>We are a team of students for a school project. With this site we want to help you learn more easily and quickly about the Second World War, but also about the atrocities of that time.</p>
+          <p>We are a team of students for a school project. With this site we want
+          to help you learn more easily and quickly about the Second World War,
+          but also about the atrocities of that time.</p>
 
-                <ul class="sci">
+          <ul class="sci">
 
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 
-                </ul>
-
-            </div>
-
-            <div class="sec quickLinks">
-
-                <h2>Links for other pages</h2>
-
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Documents</a></li>
-                    <li><a href="#">Off-Topic</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-
-            </div>
-
-            <div class="sec contact">
-
-                <h2>Contact Info</h2>
-
-                <ul class="info">
-
-                    <li>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span>Burgas<br>Slaveikov<br>Aleksandrovska No85</span>
-                    </li>
-
-                    <li>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-
-                        <p><a href="tel:12345678900">+359 123456789</a><br>
-                            <a href="tel:12345678900">+359 123456789</a></p>       
-                    </li>  
-
-                    <li>  
-                        <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span><a href="mailto:DNDonchev20@codingburgas.com">DNDonchev20@codingburgas.bg</a></span>
-                    </li>    
-
-                </ul>
-
-            </div>
+          </ul>
 
         </div>
+
+        <div class="sec quickLinks">
+
+          <h2>Links for other pages</h2>
+
+          <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Off-Topic</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="sec contact">
+
+          <h2>Contact Info</h2>
+
+          <ul class="info">
+
+            <li>
+
+              <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+
+              <span>Burgas<br>Slaveikov<br>Aleksandrovska No85</span>
+
+            </li>
+
+            <li>
+
+              <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+
+              <p><a href="tel:12345678900">+359 123456789</a><br>
+              <a href="tel:12345678900">+359 123456789</a></p>     
+
+            </li>  
+
+            <li>  
+
+              <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+              <span><a href="mailto:DNDonchev20@codingburgas.com">DNDonchev20@codingburgas.bg</a></span>
+
+            </li>    
+
+          </ul>
+
+        </div>
+
+      </div>
 
     </footer>
 
     <div class="footer-bottom">
 
-        <p>Made by JabaScripters</p>
+      <p>Made by JabaScripters</p>
 
     </div>
 
-       <script src="Scripts/main.js"></script>
-       <script src="Scripts/map.js"></script>
-       <script src="Scripts/Star.js"></script>
-    </body>
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/map.js"></script>
+    <script src="Scripts/Star.js"></script>
+
+  </body>
   
-  </html>
+</html>
