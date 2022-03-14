@@ -42,6 +42,39 @@ var drawStar = function (context, o = {}) {
   };
 };
 
+var drawArrowhead =function (locx, locy, angle, sizex, sizey) {
+  var hx = sizex / 2;
+  var hy = sizey / 2;
+  ctx.translate((locx ), (locy));
+  ctx.rotate(angle);
+  ctx.translate(-hx,-hy);
+
+  ctx.beginPath();
+  ctx.moveTo(0,0);
+  ctx.lineTo(0,1*sizey);    
+  ctx.lineTo(1*sizex,1*hy);
+  ctx.closePath();
+  ctx.fill();
+}
+
+
+// returns radians
+var findAngle = function(sx, sy, ex, ey) {
+  // make sx and sy at the zero point
+  return Math.atan((ey - sy) / (ex - sx));
+}
+
+var drawArrow= function(){
+  ctx.beginPath();
+  ctx.fillStyle = color;
+  ctx.moveTo(cx,cy);
+  ctx.quadraticCurveTo(sx, sy, ex, ey);
+  ctx.stroke();
+
+  var ang = findAngle(sx, sy, ex, ey);
+  drawArrowhead(ex, ey, ang, hh, hw);
+}
+
 function drawMap(mapId, starDraw, info) {
   const canvas = document.getElementById(mapId);
   const context = canvas.getContext("2d");
@@ -88,14 +121,16 @@ function render() {
       const star3 = drawStar(context, Star3);
       const star4 = drawStar(context, Star4);
       const star5 = drawStar(context, Star5);
+      const arrow1 = new Arrow(300, 100, 50, 30, 100, 200, 10, 10, "#FFF000");
 
+      arrow1.drawArrow();
       //push the drawn star to the items list
       items.push(star1);
       items.push(star2);
       items.push(star3);
       items.push(star4);
       items.push(star5);
-
+      items.push(arrow1);
       return items;
     },
     [
