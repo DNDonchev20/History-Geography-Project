@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#center li {
+  float: left;
+}
+
+.cloud {
+  text-decoration: none;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 6%;
+  color: #FFF3E4;
+}
+
+#center li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFF3E4;
+  text-decoration: none;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 16px 25px;
+  margin: auto;
+}
+
+#center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #483434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .holder {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .holder .sec {
+  margin-right: 30px;
+}
+
+footer .holder .sec.aboutus {
+  width: 40%;
+}
+
+footer .holder h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .holder h2:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #EED6C4;
+}
+
+footer p {
+  color: #FFF3E4;
+}
+
+.sci {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #6B4F4F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.sci li a:hover {
+  background: #EED6C4;
+}
+
+.sci li a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.quickLinks {
+  position: relative;
+  width: 25%;
+}
+
+.quickLinks ul li {
+  list-style: none;
+}
+
+.quickLinks ul li a {
+  color: #FFF3E4;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.quickLinks ul li a:hover {
+  color: #fff;
+}
+
+.contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+
+.contact .info {
+  position: relative;
+}
+
+.contact .info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact .info li span {
+  color: #FFF3E4;
+}
+
+.contact .info li a {
+  color: #FFF3E4;
+  text-decoration: none;
+}
+
+.contact .info li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  width: 100%;
+  background: #6B4F4F;
+  padding: 8px 100px;
+  text-align: center;
+  color: #FFF3E4;
+}
+
+@media (max-width: 990px) {
+  footer {
+    padding: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .holder .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .aboutus, .quickLinks, .contact {
+    width: 20%;
+    margin-left: 30%;
+  }
+  .footer-bottom {
+    padding: 8px 20px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
