@@ -153,16 +153,26 @@ nav a:hover {
   font-size: 25px;
   font-weight: 600;
   color: $mainColor;
+
+  text-align: center;
 }
 
 .card .bottom-text{
   padding: 0 20px 10px 20px;
   margin-top: 5px;
+
   background: $secondaryColor;
   opacity: 0;
+
   color: $mainColor;
+
   visibility: hidden;
   transition: 0.1s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .card:hover .bottom-text{
   opacity: 1;
@@ -175,6 +185,7 @@ nav a:hover {
   margin: 10px 0;
   text-align: left;
 }
+
 .card .bottom-text .btn a{
   text-decoration: none;
   background: $compSecondaryColor;
