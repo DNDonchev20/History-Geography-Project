@@ -89,6 +89,12 @@ form .UserInput {
   transition: 0.5s;
 }
 
+.UserInput input:focus ~ label,
+.UserInput input:valid ~ label {
+  top: -5px;
+  color: #483434;
+}
+
 .UserInput input:focus ~ span::before,
 .UserInput input:valid ~ span::before {
   width: 100%;
