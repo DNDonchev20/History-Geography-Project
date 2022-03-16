@@ -26,6 +26,10 @@ body {
           justify-content: center;
 }
 
+p {
+  text-align: justify;
+}
+
 article {
   margin-top: 8%;
   margin-bottom: 5%;

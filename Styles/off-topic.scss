@@ -35,6 +35,7 @@ body{
   background: $secondaryColor;
   transition: 0.4s;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
 }
 .card:hover{
   height: 470px;
@@ -188,5 +189,29 @@ body{
   .card{
     max-width: 700px;
     margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card{
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .card{
+    margin-bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card{
+    margin-bottom: 60%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card{
+    margin-bottom: 90%;
   }
 }

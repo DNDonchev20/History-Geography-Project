@@ -221,4 +221,28 @@ body {
     margin: 20px 0;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .card {
+    margin-bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card {
+    margin-bottom: 60%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    margin-bottom: 90%;
+  }
+}
 /*# sourceMappingURL=off-topic.css.map */
