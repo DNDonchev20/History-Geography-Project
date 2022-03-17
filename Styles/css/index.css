@@ -29,6 +29,18 @@ button {
   background-repeat: no-repeat;
 }
 
+.border {
+  border: solid 10px #6b4f4f;
+  border-style: ridge;
+  margin-left: 100px;
+}
+
+.borderTwo {
+  border: solid 10px #6b4f4f;
+  border-style: ridge;
+  margin-right: 100px;
+}
+
 #map1 {
   background-image: url("../../Images/europe_1939.svg");
 }
@@ -237,6 +249,12 @@ img {
     margin-top: 25px;
     margin-bottom: 0;
     margin-left: 0;
+  }
+  .border {
+    margin: 0;
+  }
+  .borderTwo {
+    margin: 0;
   }
 }
 
