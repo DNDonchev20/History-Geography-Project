@@ -18,6 +18,7 @@ body{
   background: $mainColor;
 }
 
+/*container styling*/
 .container{
   padding: 0 40px;
   display: flex;
@@ -28,6 +29,7 @@ body{
   
   
 }
+
 .card{
   height: 280px;
   max-width: 350px;
@@ -36,69 +38,78 @@ body{
   transition: 0.4s;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 
+  .img{
+    height: 200px;
+    width: 100%;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .top-text{
+    padding: 5px;
+
+    .name{
+      font-size: 25px;
+      font-weight: 600;
+      color: $mainColor;
+    
+      text-align: center;
+    }
+  }
+
+  .bottom-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+  
+    background: $secondaryColor;
+    opacity: 0;
+  
+    color: $mainColor;
+  
+    visibility: hidden;
+    transition: 0.1s;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .text{
+      text-align: justify;
+    }
+
+    .btn{
+      margin: 10px 0;
+      text-align: left;
+
+      a{
+        text-decoration: none;
+        background: $compSecondaryColor;
+        color: $mainColor;
+        padding: 5px 8px;
+        border-radius: 3px;
+        display: inline-flex;
+        transition: 0.2s;
+      }
+    }
+  }
 }
+
 .card:hover{
   height: 470px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
-.card .img{
-  height: 200px;
-  width: 100%;
-}
-.card .img img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.card .top-text{
-  padding: 5px;
-}
-.card .top-text .name{
-  font-size: 25px;
-  font-weight: 600;
-  color: $mainColor;
 
-  text-align: center;
-}
-
-.card .bottom-text{
-  padding: 0 20px 10px 20px;
-  margin-top: 5px;
-
-  background: $secondaryColor;
-  opacity: 0;
-
-  color: $mainColor;
-
-  visibility: hidden;
-  transition: 0.1s;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .card:hover .bottom-text{
   opacity: 1;
   visibility: visible;
 }
-.card .bottom-text .text{
-  text-align: justify;
-}
-.card .bottom-text .btn{
-  margin: 10px 0;
-  text-align: left;
-}
 
-.card .bottom-text .btn a{
-  text-decoration: none;
-  background: $compSecondaryColor;
-  color: $mainColor;
-  padding: 5px 8px;
-  border-radius: 3px;
-  display: inline-flex;
-  transition: 0.2s;
-}
+
 .card .bottom-text .btn a:hover{
   transform: scale(0.9);
 }
@@ -181,6 +192,7 @@ body{
   }
 }
 
+/*responsive*/
 @media screen and (max-width: 978px) {
   .container{
     flex-wrap: wrap;

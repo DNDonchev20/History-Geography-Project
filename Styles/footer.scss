@@ -10,6 +10,8 @@ $compSecondaryColor: #6B4F4F;
 	box-sizing: border-box;
 }
 
+
+/*footer styling*/
 #center li{
     float:left;
 }
@@ -195,6 +197,7 @@ footer p{
 	color: $compMainColor;
 }
 
+/*responsive*/
 @media(max-width: 990px){
 	footer{
           padding: 30px;

@@ -16,8 +16,7 @@ body {
   font-family: "Patrick Hand", cursive;
 }
 
-
-
+/*button styling*/
 button {
   width: 155px;
   height: 60px;
@@ -32,6 +31,7 @@ button {
   margin-right: 15px;
 }
 
+/*we use canvas so we need to integrate svg like background images*/
 .map {
   background-size: contain;
   background-repeat: no-repeat;
@@ -56,6 +56,7 @@ button {
   height: 85vh;
 }
 
+/*main containers styling*/
 .container {
   width: 100%;
   height: fit-content;
@@ -166,6 +167,7 @@ img {
   background-size: cover;
 }
 
+/*responsive*/
 @media screen and(max-width:1510px) {
   #center li a {
     font-size: 20px;
@@ -531,6 +533,7 @@ img {
   }
 }
 
+/*this fixes the problem with oversizing when is smaller screen*/
 @media only screen and (max-width: 1050px) {
   .carousel {
     height: 95%;

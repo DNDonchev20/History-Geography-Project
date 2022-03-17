@@ -20,6 +20,7 @@ body {
   font-family: "Patrick Hand", cursive;
 }
 
+/*article styling*/
 .centering {
   display: flex;
   align-items: center;
@@ -62,6 +63,7 @@ h1, h3 {
   margin: 10px;
 }
 
+/*responsive*/
 @media screen and(max-width: 835px) {
   article {
     width: 70%;

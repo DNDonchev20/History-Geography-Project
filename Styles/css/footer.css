@@ -5,6 +5,7 @@
           box-sizing: border-box;
 }
 
+/*footer styling*/
 #center li {
   float: left;
 }
@@ -209,6 +210,7 @@ footer p {
   color: #FFF3E4;
 }
 
+/*responsive*/
 @media (max-width: 990px) {
   footer {
     padding: 30px;

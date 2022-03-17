@@ -13,6 +13,7 @@ body {
   background: #eed6c4;
 }
 
+/*container styling*/
 .container {
   padding: 0 40px;
   display: -webkit-box;
@@ -37,12 +38,6 @@ body {
   transition: 0.4s;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.card:hover {
-  height: 470px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card .img {
@@ -92,11 +87,6 @@ body {
           flex-direction: column;
 }
 
-.card:hover .bottom-text {
-  opacity: 1;
-  visibility: visible;
-}
-
 .card .bottom-text .text {
   text-align: justify;
 }
@@ -117,6 +107,17 @@ body {
   display: inline-flex;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.card:hover {
+  height: 470px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
 }
 
 .card .bottom-text .btn a:hover {
@@ -207,6 +208,7 @@ body {
   }
 }
 
+/*responsive*/
 @media screen and (max-width: 978px) {
   .container {
     -ms-flex-wrap: wrap;

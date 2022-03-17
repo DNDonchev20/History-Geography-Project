@@ -29,9 +29,9 @@ img{
   width: 100%;
   border: 10px solid $compSecondaryColor;
   border-radius: 5px;
-  
 }
 
+/*documents styling*/
 .wrapper{
   max-width: 1080px;
   margin: 50px auto;
@@ -39,6 +39,7 @@ img{
   position: relative;
   
 }
+
 .wrapper .center-line{
   position: absolute;
   height: 100%;
@@ -48,17 +49,20 @@ img{
   top: 20px;
   transform: translateX(-50%);
 }
+
 .wrapper .row{
   display: flex;
 }
+
 .wrapper .childOne{
   justify-content: flex-start;
   padding-top: 2%;
-  
 }
+
 .wrapper .childTwo{
   justify-content: flex-end;
 }
+
 .wrapper .row section{
   background: $mainColor;
   border-radius: 5px;
@@ -73,6 +77,7 @@ img{
 .childOne section::before{
   left: -7px;
 }
+
 .row section .icon,
 .center-line .scroll-icon{
   position: absolute;
@@ -86,12 +91,14 @@ img{
   font-size: 17px;
   box-shadow: 0 0 0 4px $mainColor, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
+
 .center-line .scroll-icon{
   bottom: 0px;
   left: 50%;
   font-size: 25px;
   transform: translateX(-50%);
 }
+
 .childOne section .icon{
   top: 15px;
   right: -60px;
@@ -101,33 +108,38 @@ img{
   top: 15px;
   left: -60px;
 }
+
 .row section .details,
 .row section .bottom{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .row section .details .title{
   font-size: 22px;
   font-weight: 600;
 }
+
 .row section p{
   margin: 10px 0 17px 0;
 }
+
 .row section .bottom a{
   text-decoration: none;
   background: $compSecondaryColor;
   color: $mainColor;
   padding: 7px 15px;
   border-radius: 5px;
-  // font-size: 17px;
   font-weight: 400;
   transition: all 0.3s ease;
 }
+
 .row section .bottom a:hover{
   transform: scale(0.97);
 }
 
+/*responsive*/
 @media screen and (max-width: 800px){
   .logo{
     color: $mainColor;
