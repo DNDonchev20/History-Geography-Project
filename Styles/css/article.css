@@ -178,7 +178,25 @@ h1, h3 {
   }
 }
 
+/*show more less function style*/
 .hide {
   display: none;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #6b4f4f;
+  border-color: #6b4f4f;
+  border-radius: 5px;
+  color: #fff3e4;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=article.css.map */

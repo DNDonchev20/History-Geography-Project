@@ -162,6 +162,29 @@ h1, h3 {
   }
 }
 
+
+/*show more less function style*/
 .hide {
   display: none;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+
+  font-size: 16px;
+
+  background-color: $compSecondaryColor;
+  border-color: $compSecondaryColor;
+  border-radius: 5px;
+
+  color: $compMainColor;
+  margin-right: 15px;
+}
+
+@media screen and(max-width: 600px)
+{
+  button{
+    margin-right: 0;
+  }
 }
