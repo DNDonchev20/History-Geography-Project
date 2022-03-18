@@ -30,13 +30,13 @@ function render() {
     function (context) {
       const items = [];
       //Germany
-      const Star1 = new Star(330, 350, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+      const Star1 = new Star(270, 350, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
       //USSR
       const Star2 = new Star(600, 300, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
       //Britain
       const Star3 = new Star(140, 330, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
       //Italy
-      const Star4 = new Star(300, 450, 15, 6, 5, 2.5, "#f06d06", "#fed8b1", 60);
+      const Star4 = new Star(280, 440, 15, 6, 5, 2.5, "#f06d06", "#fed8b1", 60);
       //France
       const Star5 = new Star(190, 420, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
 
@@ -66,20 +66,22 @@ function render() {
       },
     ]
   );
+
   drawMap(
     "map2", //mapId
     function (context) {
       const items = [];
+
       //China
-      const Star1 = new Star(530, 320, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
+      const Star1 = new Star(450, 320, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
       //USSR
       const Star2 = new Star(300, 150, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
       //Japan
-      const Star3 = new Star(700, 290, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
+      const Star3 = new Star(640, 320, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
       //Philippines
-      const Star4 = new Star(660, 490, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+      const Star4 = new Star(580, 490, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
       //Manchuria
-      const Star5 = new Star(600, 240, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+      const Star5 = new Star(520, 260, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
 
       //star drawing begin
 
