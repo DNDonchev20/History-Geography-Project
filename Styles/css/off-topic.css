@@ -92,7 +92,7 @@ body {
 }
 
 .card .bottom-text .btn {
-  margin: 10px 0;
+  margin-top: 50px;
   text-align: left;
 }
 
@@ -226,25 +226,25 @@ body {
 
 @media screen and (max-width: 500px) {
   .card {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 }
 
 @media screen and (max-width: 455px) {
   .card {
-    margin-bottom: 40%;
+    margin-bottom: 15%;
   }
 }
 
 @media screen and (max-width: 370px) {
   .card {
-    margin-bottom: 60%;
+    margin-bottom: 20%;
   }
 }
 
 @media screen and (max-width: 350px) {
   .card {
-    margin-bottom: 90%;
+    margin-bottom: 30%;
   }
 }
 /*# sourceMappingURL=off-topic.css.map */

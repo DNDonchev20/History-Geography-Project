@@ -34,11 +34,11 @@ function render() {
       //USSR
       const Star2 = new Star(600, 300, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
       //Britain
-      const Star3 = new Star(180, 300, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
+      const Star3 = new Star(140, 330, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
       //Italy
-      const Star4 = new Star(310, 490, 15, 6, 5, 2.5, "#f06d06", "#fed8b1", 60);
+      const Star4 = new Star(300, 450, 15, 6, 5, 2.5, "#f06d06", "#fed8b1", 60);
       //France
-      const Star5 = new Star(200, 400, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+      const Star5 = new Star(190, 420, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
 
       //push the drawn star to the items list
       items.push(Star1.drawStar(context, Star1));
