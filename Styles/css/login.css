@@ -139,6 +139,7 @@ input[type="submit"]:hover {
 }
 
 .registerDirectory p {
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 

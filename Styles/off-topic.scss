@@ -27,7 +27,6 @@ body{
   margin-bottom: 10%;
   margin-top: 12%;
   
-  
 }
 
 .card{
@@ -99,6 +98,8 @@ body{
   }
 }
 
+//card hover effects
+
 .card:hover{
   height: 470px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
@@ -113,6 +114,9 @@ body{
 .card .bottom-text .btn a:hover{
   transform: scale(0.9);
 }
+
+
+//responsive
 
 @media screen and (max-width: 800px){
   .logo{
@@ -192,7 +196,6 @@ body{
   }
 }
 
-/*responsive*/
 @media screen and (max-width: 978px) {
   .container{
     flex-wrap: wrap;

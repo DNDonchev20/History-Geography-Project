@@ -138,6 +138,7 @@ input[type="submit"]:hover {
 }
 
 .loginDirectory p {
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 

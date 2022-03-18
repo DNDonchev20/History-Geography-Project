@@ -208,7 +208,6 @@ body {
   }
 }
 
-/*responsive*/
 @media screen and (max-width: 978px) {
   .container {
     -ms-flex-wrap: wrap;
