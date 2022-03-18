@@ -1,3 +1,31 @@
+function alertToUser(alertFor){
+  switch(alertFor)
+  {
+    case 1:
+      alert("Successfully registered!");
+      break;
+    case 2:
+      alert("An account with that username already exists!");
+      break;
+    case 3:
+      alert("An account with that Email already exists!");
+      break;
+    case 4:
+      alert("Password and Confirm Password don't match!\nPlease try Again!");
+      break;
+    case 5:
+      alert("Please make sure your password contains at least:\n"+
+      "One uppercase letter\nO"+
+      "ne lowercase letter\n"+
+      "One number\n"+
+      "One special character\n"+
+      "And is at least 8 simbols long");
+      break;
+    case 6:
+      alert("Please make sure your email is spelled correctly:\n");
+      break;
+  }
+}
 function register(e) {
   e.preventDefault();
 
@@ -15,21 +43,21 @@ function register(e) {
     return;
   } 
     let user = new User(
-      btoa(document.getElementById("Username").value),
-      btoa(document.getElementById("Email").value),
-      btoa(document.getElementById("Pass").value)
+      document.getElementById("Username").value,
+      document.getElementById("Email").value,
+      document.getElementById("Pass").value
     );
 
     if (availableUsername(user.Username) && availableEmail(user.Email)) {
       users.push(user);
 
       localStorage.setItem("users", JSON.stringify(users));
-      alert("Successfully registered!");
+      alertToUser(1);
       window.location = "login.html";
     } else if (availableUsername(user.Username) == false) {
-      alert("An account with that username already exists!");
+      alertToUser(2);
     } else if (availableEmail(user.Email) == false) {
-      alert("An account with that Email already exists!");
+      alertToUser(3);
     }
   
 }
@@ -38,7 +66,7 @@ function availableUsername(nameToCheck) {
   const users = JSON.parse(localStorage.getItem("users")) || [];
 
   for (var i = 0; i < users.length; i++) {
-    if (nameToCheck == atob(users[i].Username)) {
+    if (nameToCheck == users[i].Username) {
       return false;
     }
   }
@@ -48,7 +76,7 @@ function availableUsername(nameToCheck) {
 function availableEmail(emailToCheck) {
   const users = JSON.parse(localStorage.getItem("users")) || [];
   for (var i = 0; i < users.length; i++) {
-    if (emailToCheck == atob(users[i].Email)) {
+    if (emailToCheck == users[i].Email) {
       return false;
     }
   }
@@ -60,7 +88,7 @@ function checkPass(pass, confirmPass) {
   if(pass.match(format))
   {
     if(pass != confirmPass){
-      alert("Password and Confirm Password don't match!\nPlease try Again!");
+      alertToUser(4);
       document.getElementById("confirmPass");
       return false;
     }
@@ -69,12 +97,7 @@ function checkPass(pass, confirmPass) {
     }
   }
   document.getElementById("Pass").focus();
-  alert("Please make sure your password contains at least:\n"+
-  "One uppercase letter\nO"+
-  "ne lowercase letter\n"+
-  "One number\n"+
-  "One special character()\n"+
-  "And is at least 8 simbols long");
+alertToUser(5);
   return false;
 }
 
@@ -85,7 +108,7 @@ function checkEmail(email){
   {
     return true;
   }
-  alert("Please make sure your email is spelled correctly:\n");
+  alertToUser(6);
   return false;
 }
 

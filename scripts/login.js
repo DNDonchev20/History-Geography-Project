@@ -1,3 +1,14 @@
+function alertToUser(alertFor){
+  switch(alertFor)
+  {
+    case 1:
+      alert("Login Successfull!");
+      break;
+    case 2:
+      alert("Wrong username or password!");
+      break;
+  }
+}
 function login(e) {
   e.preventDefault();
 
@@ -8,18 +19,18 @@ function login(e) {
   let currentUser = null;
   for (var i = 0; i < users.length; i++) {
     if (
-      username == atob(users[i].Username) &&
-      password == atob(users[i].Pass)
+      username == users[i].Username &&
+      password == users[i].Pass
     ) {
       currentUser = users[i];
       localStorage.setItem("currentUser", JSON.stringify(currentUser));
-      alert("Login Successfull!");
+      alertToUser(1);
       window.location = "/index.html";
     }
   }
 
   if (currentUser == null) {
-    alert("Wrong username or password!");
+    alertToUser(2);
   }
 }
 

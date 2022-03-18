@@ -63,7 +63,7 @@ function getCurrentUser() {
   const currentUser = JSON.parse(localStorage.getItem("currentUser")) || null;
   const loggedUser = document.getElementById("loggedUser");
   if (currentUser != null) {
-    loggedUser.innerHTML = `&nbsp;${atob(currentUser.Username)}`;
+    loggedUser.innerHTML = `&nbsp;${currentUser.Username}`;
   } else {
     loggedUser.innerHTML = "&nbsp;Guest";
   }

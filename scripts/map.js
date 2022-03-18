@@ -1,79 +1,3 @@
-var drawStar = function (context, o = {}) {
-  let numPoints = o.numPoints || 5;
-  let outerRadius = o.outerRadius || 100;
-  let innerRadius = o.innerRadius || 50;
-  let cx = o.cx || 0;
-  let cy = o.cy || 0;
-
-  let rotate = o.rotate || 0;
-
-  context.lineWidth = o.lineWidth || 1;
-  context.strokeStyle = o.stroke || "#000";
-  context.beginPath();
-  const draw = (radius, angle, action) => {
-    let x = cx + radius * Math.cos(angle);
-    let y = cy + radius * Math.sin(angle);
-    context[action](x, y);
-  };
-
-  draw(outerRadius, rotate, "moveTo");
-
-  let angle = (2 * Math.PI) / numPoints;
-
-  for (var i = 0; i <= numPoints; i++) {
-    let outerAngle = i * angle + rotate;
-    let innerAngle = outerAngle + angle / 2;
-    draw(outerRadius, outerAngle, "lineTo");
-    draw(innerRadius, innerAngle, "lineTo");
-  }
-
-  context.stroke();
-
-  if (o.fill) {
-    context.fillStyle = o.fill;
-    context.fill();
-  }
-
-  return {
-    left: cx - innerRadius,
-    top: cy - innerRadius,
-    right: cx + innerRadius,
-    bottom: cy + innerRadius,
-  };
-};
-
-var drawArrowhead =function (locx, locy, angle, sizex, sizey) {
-  var hx = sizex / 2;
-  var hy = sizey / 2;
-  ctx.translate((locx ), (locy));
-  ctx.rotate(angle);
-  ctx.translate(-hx,-hy);
-
-  ctx.beginPath();
-  ctx.moveTo(0,0);
-  ctx.lineTo(0,1*sizey);    
-  ctx.lineTo(1*sizex,1*hy);
-  ctx.closePath();
-  ctx.fill();
-}
-
-
-// returns radians
-var findAngle = function(sx, sy, ex, ey) {
-  // make sx and sy at the zero point
-  return Math.atan((ey - sy) / (ex - sx));
-}
-
-var drawArrow= function(){
-  ctx.beginPath();
-  ctx.fillStyle = color;
-  ctx.moveTo(cx,cy);
-  ctx.quadraticCurveTo(sx, sy, ex, ey);
-  ctx.stroke();
-
-  var ang = findAngle(sx, sy, ex, ey);
-  drawArrowhead(ex, ey, ang, hh, hw);
-}
 
 function drawMap(mapId, starDraw, info) {
   const canvas = document.getElementById(mapId);
@@ -87,10 +11,10 @@ function drawMap(mapId, starDraw, info) {
 
     for (let i = 0; i < items.length; i++) {
       if (
-        clickedX < items[i].right &&
+        clickedX < items[i].right + 0.5*items[i].offset &&
         clickedX > items[i].left &&
         clickedY > items[i].top &&
-        clickedY < items[i].bottom
+        clickedY < items[i].bottom + 0.5*items[i].offset
       ) {
         alert(info[i].text);
       }
@@ -100,6 +24,7 @@ function drawMap(mapId, starDraw, info) {
 
 function render() {
   //add more drawMap calls to draw each map
+ 
   drawMap(
     "map1", //mapId
     function (context) {
@@ -115,22 +40,12 @@ function render() {
       //France
       const Star5 = new Star(200, 400, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
 
-      //star drawing begin
-      const star1 = drawStar(context, Star1);
-      const star2 = drawStar(context, Star2);
-      const star3 = drawStar(context, Star3);
-      const star4 = drawStar(context, Star4);
-      const star5 = drawStar(context, Star5);
-      const arrow1 = new Arrow(300, 100, 50, 30, 100, 200, 10, 10, "#FFF000");
-
-      arrow1.drawArrow();
       //push the drawn star to the items list
-      items.push(star1);
-      items.push(star2);
-      items.push(star3);
-      items.push(star4);
-      items.push(star5);
-      items.push(arrow1);
+      items.push(Star1.drawStar(context, Star1));
+      items.push(Star2.drawStar(context, Star2));
+      items.push(Star3.drawStar(context, Star3));
+      items.push(Star4.drawStar(context, Star4));
+      items.push(Star5.drawStar(context, Star5));
       return items;
     },
     [
@@ -148,6 +63,73 @@ function render() {
       },
       {
         text: "France info",
+      },
+    ]
+  );
+  drawMap(
+    "map2", //mapId
+    function (context) {
+      const items = [];
+      //China
+      const Star1 = new Star(530, 320, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
+      //USSR
+      const Star2 = new Star(300, 150, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
+      //Japan
+      const Star3 = new Star(700, 290, 20, 8, 5, 3.2, "#f06d06", "#fed8b1", 60);
+      //Philippines
+      const Star4 = new Star(660, 490, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+      //Manchuria
+      const Star5 = new Star(600, 240, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
+
+      //star drawing begin
+
+      //push the drawn star to the items list
+      items.push(Star1.drawStar(context, Star1));
+      items.push(Star2.drawStar(context, Star2));
+      items.push(Star3.drawStar(context, Star3));
+      items.push(Star4.drawStar(context, Star4));
+      items.push(Star5.drawStar(context, Star5));
+
+      return items;
+    },
+    [
+      {
+        text: "China info",
+      },
+      {
+        text: "USSR info",
+      },
+      {
+        text: "Japan info",
+      },
+      {
+        text: "Philippines info",
+      },
+      {
+        text: "Manchuria info",
+      },
+    ]
+  );
+  drawMap(
+    "map3", //mapId
+    function (context) {
+      const items = [];
+      //USA
+      const Star1 = new Star(300, 310, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
+      //Brazil
+      const Star2 = new Star(530, 650, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
+
+      //push the drawn star to the items list
+      items.push(Star1.drawStar(context, Star1));
+      items.push(Star2.drawStar(context, Star2));
+      return items;
+    },
+    [
+      {
+        text: "USA info",
+      },
+      {
+        text: "Brazil info",
       },
     ]
   );
