@@ -37,14 +37,14 @@ button {
   background-repeat: no-repeat;
 }
 
-.border{
+.border {
   border: solid 10px $compSecondaryColor;
   border-style: ridge;
 
   margin-left: 100px;
 }
 
-.borderTwo{
+.borderTwo {
   border: solid 10px $compSecondaryColor;
   border-style: ridge;
 
@@ -119,7 +119,7 @@ button {
   background-color: $compSecondaryColor;
 
   font-size: 20px;
-  color: $compMainColor
+  color: $compMainColor;
 }
 
 .compContainer {
@@ -223,11 +223,11 @@ img {
     margin-left: 0;
   }
 
-  .border{
+  .border {
     margin: 0;
   }
 
-  .borderTwo{
+  .borderTwo {
     margin: 0;
   }
 }
@@ -574,10 +574,10 @@ img {
 
 /*popup stylization*/
 
-.popup{
+.popup {
   padding: 20px;
   width: 550px;
-  height: 550px;
+  height: fit-content;
 
   background-color: $compSecondaryColor;
 
@@ -588,31 +588,30 @@ img {
   border-color: $secondaryColor;
 }
 
-.topTextPopup
-{
+.topTextPopup {
   display: flex;
   justify-content: center;
 
   height: 150px;
 }
 
-.headerPopup{
+.headerPopup {
   width: 200px;
 
   margin-top: 15%;
   margin-left: 5px;
 
-  color: $compMainColor
+  color: $compMainColor;
 }
 
-.flag{
+.flag {
   width: 270px;
   height: 155px;
   margin-top: -1%;
   margin-right: -1%;
 }
 
-.bottomTextPopup{
+.bottomTextPopup {
   color: $mainColor;
   text-decoration: none;
 
@@ -626,50 +625,46 @@ img {
   font-size: 20px;
 }
 
-.closePopup{
+.closePopup {
   margin-top: 50px;
 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@media screen and(max-width: 1500px)
-{
-  .popup{
+@media screen and(max-width: 1500px) {
+  .popup {
     margin-left: 35%;
   }
 }
 
-@media screen and(max-width: 1200px)
-{
-  .popup{
+@media screen and(max-width: 1200px) {
+  .popup {
     margin-left: 30%;
   }
 }
 
-@media screen and(max-width: 1000px)
-{
-  .popup{
+@media screen and(max-width: 1000px) {
+  .popup {
     margin-left: 25%;
   }
 }
 
-@media screen and(max-width: 800px)
-{
-  .popup{
+@media screen and(max-width: 800px) {
+  .popup {
     margin-left: 15%;
   }
 }
 
-@media screen and(max-width: 650px)
-{
-  .popup{
+@media screen and(max-width: 650px) {
+  .popup {
     margin-left: 5%;
   }
 }
 
-@media screen and(max-width: 430px)
-{
-  .popup{
+@media screen and(max-width: 430px) {
+  .popup {
     margin-left: 2.5%;
   }
 }

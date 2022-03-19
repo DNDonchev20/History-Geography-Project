@@ -1,4 +1,3 @@
-
 function drawMap(mapId, starDraw, info) {
   const canvas = document.getElementById(mapId);
   const context = canvas.getContext("2d");
@@ -11,10 +10,10 @@ function drawMap(mapId, starDraw, info) {
 
     for (let i = 0; i < items.length; i++) {
       if (
-        clickedX < items[i].right + 0.5*items[i].offset &&
+        clickedX < items[i].right + 0.5 * items[i].offset &&
         clickedX > items[i].left &&
         clickedY > items[i].top &&
-        clickedY < items[i].bottom + 0.5*items[i].offset
+        clickedY < items[i].bottom + 0.5 * items[i].offset
       ) {
         openPopup(info[i].popupId);
       }
@@ -24,7 +23,7 @@ function drawMap(mapId, starDraw, info) {
 
 function render() {
   //add more drawMap calls to draw each map
- 
+
   drawMap(
     "map1", //mapId
     function (context) {

@@ -603,7 +603,9 @@ img {
 .popup {
   padding: 20px;
   width: 550px;
-  height: 550px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #6b4f4f;
   margin-top: 15%;
   margin-left: 39%;
