@@ -125,6 +125,8 @@ button {
   width: 300px;
   padding: 50px;
   background-color: #6b4f4f;
+  font-size: 20px;
+  color: #fff3e4;
 }
 
 .compContainer {
