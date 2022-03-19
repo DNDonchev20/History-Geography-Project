@@ -17,10 +17,10 @@
 + Useful links
 
  ## Team    <a name = "team">JabaScripters</a>
-1. Mario Zlatev -  [MIZlatev20](https://github.com/MIZlatev20)
-2. Georgi Zhekov -  [GTZhekov20](https://github.com/GTZhekov20)
-3. David Donchev -  [DNDonchev20](https://github.com/DNDonchev20)
-4. Nikolay Despotov - [NVDespotov20](https://github.com/NVDespotov20)
+1. Scrum trainer - [Deivid Donchev](https://github.com/DNDonchev20)
+2. Front-end developer - [Mario Zlatev](https://github.com/MIZlatev20)
+3. Back-end developer - [Nikolay Despotov](https://github.com/NVDespotov20)
+4. Designer - [Georgi Zhekov](https://github.com/GTZhekov20)
 
 ## 🚀 Languages and tools:
 
