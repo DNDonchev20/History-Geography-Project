@@ -67,6 +67,7 @@ function getCurrentUser() {
   } else {
     loggedUser.innerHTML = "&nbsp;Guest";
   }
+  
 }
 
 window.addEventListener("DOMContentLoaded", getCurrentUser);
