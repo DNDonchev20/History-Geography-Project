@@ -192,6 +192,7 @@ button {
   border-radius: 5px;
   color: #fff3e4;
   margin-right: 15px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
