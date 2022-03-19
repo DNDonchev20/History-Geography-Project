@@ -16,7 +16,7 @@ function drawMap(mapId, starDraw, info) {
         clickedY > items[i].top &&
         clickedY < items[i].bottom + 0.5*items[i].offset
       ) {
-        alert(info[i].text);
+        openPopup(info[i].popupId);
       }
     }
   });
@@ -50,19 +50,19 @@ function render() {
     },
     [
       {
-        text: "Germany info",
+        popupId: "#popup1",
       },
       {
-        text: "USSR info",
+        popupId: "#popup2",
       },
       {
-        text: "Britain info",
+        popupId: "#popup3",
       },
       {
-        text: "Italy info",
+        popupId: "#popup4",
       },
       {
-        text: "France info",
+        popupId: "#popup5",
       },
     ]
   );
@@ -96,19 +96,19 @@ function render() {
     },
     [
       {
-        text: "China info",
+        popupId: "#popup6",
       },
       {
-        text: "USSR info",
+        popupId: "#popup7",
       },
       {
-        text: "Japan info",
+        popupId: "#popup8",
       },
       {
-        text: "Philippines info",
+        popupId: "#popup9",
       },
       {
-        text: "Manchuria info",
+        popupId: "#popup10",
       },
     ]
   );
@@ -128,10 +128,10 @@ function render() {
     },
     [
       {
-        text: "USA info",
+        popupId: "#popup11",
       },
       {
-        text: "Brazil info",
+        popupId: "#popup12",
       },
     ]
   );
