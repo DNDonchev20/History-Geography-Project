@@ -159,7 +159,7 @@ img {
     display: grid;
     -ms-grid-columns: 1fr auto  1.2fr 1fr;
         grid-template-columns: 1fr auto  1.2fr 1fr;
-    margin-top: -2.5%;
+    margin-top: -2.68%;
   }
   .logo {
     color: #EED6C4;
@@ -324,9 +324,21 @@ img {
   }
 }
 
+@media screen and (max-width: 800px) {
+  header {
+    margin-top: -7%;
+  }
+}
+
 @media screen and (max-width: 780px) {
   header {
     margin-top: -6.9%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  header {
+    margin-top: -7.2%;
   }
 }
 
@@ -336,15 +348,45 @@ img {
   }
 }
 
+@media screen and (max-width: 650px) {
+  header {
+    margin-top: -8.1%;
+  }
+}
+
 @media screen and (max-width: 630px) {
   header {
     margin-top: -8.4%;
   }
 }
 
+@media screen and (max-width: 605px) {
+  header {
+    margin-top: -8.8%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header {
+    margin-top: -9.8%;
+  }
+}
+
 @media screen and (max-width: 560px) {
   header {
-    margin-top: -9.2%;
+    margin-top: -9.6%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  header {
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header {
+    margin-top: -11%;
   }
 }
 
@@ -360,15 +402,33 @@ img {
   }
 }
 
+@media screen and (max-width: 395px) {
+  header {
+    margin-top: -13.8%;
+  }
+}
+
 @media screen and (max-width: 380px) {
   header {
     margin-top: -16%;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 325px) {
   header {
     margin-top: -18%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    margin-top: -19%;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  header {
+    margin-top: -19.9%;
   }
 }
 
