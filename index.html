@@ -171,10 +171,30 @@
           <button onclick="switchMap('a45')">Asia 1945</button>
 
         </div>
+        
+        <!--popup windows-->
         <dialog class="popup" id="popup1">
-          Germany  info
-          <button class="closePopup" onclick="closePopup('#popup1')" id="closePopup1">Back</button>
+
+          <div class="topTextPopup">
+            <h2 class="headerPopup">German Reich</h2>
+            <img src="" alt="flag" class="flag">
+          </div>
+
+          <hr>
+
+          <div class="bottomTextPopup">
+            <ul>
+              <li>13.6 million soldiers</li>
+              <li>4,358,649 tanks</li>
+              <li>79,375,281 population before the war</li>
+              <li>Around 65 million after the war</li>
+              <li>Highly developed industry</li>
+            </ul>
+
+            <button class="closePopup" onclick="closePopup('#popup1')" id="closePopup1">Back</button>
+          </div>
         </dialog>
+
         <dialog class="popup" id="popup2">
           USSR info
           <button class="closePopup" onclick="closePopup('#popup2')" id="closePopup2">Back</button>
