@@ -5,7 +5,7 @@
 
 <h3 align="center">JabaScripters</h3>
 
-<p align="center"> 🤖 Website about Second World War.
+<p align="center"> 🤖 Website about the Second World War.
     <br> 
 </p>
 
@@ -16,9 +16,10 @@
 + [About the website](#about)
 + [Installation](#install)
 + [Useful links](#acknowledgement)
++ [Sources](#sources)
 
 ## <p id = "teamInfo">Team <a name = "team">JabaScripters</a> </p>
-1. Scrum trainer - [Deivid Donchev](https://github.com/DNDonchev20)
+1. Scrum Trainer - [Deivid Donchev](https://github.com/DNDonchev20)
 2. Front-end developer - [Mario Zlatev](https://github.com/MIZlatev20)
 3. Back-end developer - [Nikolay Despotov](https://github.com/NVDespotov20)
 4. Designer - [Georgi Zhekov](https://github.com/GTZhekov20)
@@ -40,24 +41,35 @@ You can find them on the following links:
 <a href="https://codingburgas-my.sharepoint.com/:p:/g/personal/dndonchev20_codingburgas_bg/EZ35ERZ3V5BFgRtNFyJ1s74B-PAO-JzO_ZIib-JKRmeHNA?e=H3EFuD">Presentation</a>
 
 ## <p id = "about">🧐 About <a name = "about">our website</a></p>
-А website that has visual information on the most common things before, during and after World War II
+А website that has information on the most common things before, during and after World War II
 
 ## <p id = "license">License</p>
 This project is licensed under the MIT license. See [License](LICENSE.txt) for more
 
 ## <p id = "install">⚙ Installation</p>
 ```
-You can download our project by using the green "Code" button.
+You can download our project by clicking the green "Code" button.
 
 Or by pasting the following code in your CMD:
 git clone https://github.com/DNDonchev20/History-Geography-Project.git
 ```
   
-## <p id = "acknowledgement">🎉 Very useful things that we found during the project<a name = "acknowledgement"></a></p>
+## <p id = "acknowledgement">🎉 Useful links<a name = "acknowledgement"></a></p>
+
   <a href="https://png2svg.com/">PNG to SVG converter</a>
   <br>
-  <a href="https://historicalmapchart.net/europe-world-war-2.html">Create a custom WWII maps</a>
+  <a href="https://historicalmapchart.net/europe-world-war-2.html">Create custom WWII maps</a>
+
+  ## <p id = "sources">📰 Sources<a name = "sources"></a></p>
+
+  <ul>
+    <a href="https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags"><li>Flags</li></a>
+    <a href="https://www.wikipedia.org/"><li>Information</li></a>
+    <a href="https://regexr.com"><li>Patterns</li></a>
+    <a href="https://developer.mozilla.org/en-US/"><li>Resources we learned from</li></a>
+  </ul>
+  
 
   ---
 
-# 🎉 Use it to learn more easily Second World War
+# 📚 Use it to learn more easily about the Second World War

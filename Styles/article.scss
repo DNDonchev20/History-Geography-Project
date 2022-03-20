@@ -63,6 +63,86 @@ h1, h3 {
   margin: 10px;
 }
 
+.arrow-pointer-right {
+  width: 250px;
+  height: 51px;
+  background: $secondaryColor;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -2px;; 
+    bottom: 0; 
+    width: 0; 
+    height: 0;
+    border-left: 25px solid $compSecondaryColor;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -24.7px;
+    bottom: -3px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid $secondaryColor;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    
+    
+  }
+}
+
+.arrow-pointer-left {
+  width: 250px;
+  height: 51px;
+  background: $secondaryColor;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -24.7px;; 
+    bottom: -3px; 
+    width: 0; 
+    height: 0;
+    border-left: 25px solid $secondaryColor;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(180deg);
+    
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -2px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid $compSecondaryColor;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(180deg);
+    
+  }
+}
+
+.button-container{
+  margin-top: -5.5%;
+  margin-bottom: 2.5%;
+}
+
+.button-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*responsive*/
 @media screen and(max-width: 835px) {
   article {
@@ -142,6 +222,15 @@ h1, h3 {
 @media screen and(max-width: 600px) {
   article {
     width: 80%;
+  }
+
+  .button-center{
+    display:flex;
+    flex-direction: column;
+  }
+
+  button{
+    margin: 20px;
   }
 }
 
