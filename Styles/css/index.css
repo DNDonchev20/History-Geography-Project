@@ -360,6 +360,9 @@ img {
   .heroic {
     height: 38vh;
   }
+  .Images {
+    height: 550px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -398,6 +401,9 @@ img {
   }
   .europeButtons {
     margin-bottom: 50px;
+  }
+  .Images {
+    height: 500px;
   }
 }
 
@@ -455,6 +461,9 @@ img {
   }
   .map {
     width: 540px;
+  }
+  .Images {
+    height: 450px;
   }
 }
 
@@ -514,6 +523,9 @@ img {
   #center {
     padding-left: 23%;
   }
+  .Images {
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -527,6 +539,9 @@ img {
     vertical-align: middle;
     width: 100%;
     height: 100%;
+  }
+  .Imgaes {
+    height: 325px;
   }
 }
 
