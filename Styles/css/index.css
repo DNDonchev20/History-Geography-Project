@@ -6,7 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 body {
@@ -534,7 +534,7 @@ img {
   .map {
     width: 325px;
   }
-  .mySlides {
+  .carouselImg {
     display: none;
   }
   .carousel {
@@ -548,7 +548,7 @@ img {
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshowContainer {
   max-width: 96.7%;
   position: relative;
   margin: auto;

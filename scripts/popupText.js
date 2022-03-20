@@ -280,12 +280,14 @@ var popupText39 = [
     "</button>" +
     "</div>",
 ];
-//////////////////////
+/*
+  This is the html for the popups after 1945.
+*/
 const popupText45 = [
   //1
   '<div class="topTextPopup">' +
     '<h2 class="headerPopup">Germany</h2>' +
-    '<img src="Images/Flags/germany.png" alt="flag" class="flag">' +
+    '<img src="Images/Flags/germany2.png" alt="flag" class="flag">' +
     "</div>" +
     "<hr>" +
     '<div class="bottomTextPopup">' +

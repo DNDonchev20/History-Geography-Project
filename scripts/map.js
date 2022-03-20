@@ -1,3 +1,6 @@
+/*
+This function is used to draw a single map and make the items on it clickable.
+*/
 function drawMap(mapId, starDraw, info) {
   const canvas = document.getElementById(mapId);
   const context = canvas.getContext("2d");
@@ -20,10 +23,11 @@ function drawMap(mapId, starDraw, info) {
     }
   });
 }
-
+/*
+This function calls drawMap multiple times
+in order to render all maps and elements on them.
+*/
 function render() {
-  //add more drawMap calls to draw each map
-
   drawMap(
     "map1", //mapId
     function (context) {
@@ -39,7 +43,7 @@ function render() {
       //France
       const Star5 = new Star(190, 420, 25, 10, 5, 4, "#f06d06", "#fed8b1", 60);
 
-      //push the drawn star to the items list
+      //Push the drawn star to the items list.
       items.push(Star1.drawStar(context, Star1));
       items.push(Star2.drawStar(context, Star2));
       items.push(Star3.drawStar(context, Star3));
@@ -84,7 +88,7 @@ function render() {
 
       //star drawing begin
 
-      //push the drawn star to the items list
+      //Push the drawn star to the items list.
       items.push(Star1.drawStar(context, Star1));
       items.push(Star2.drawStar(context, Star2));
       items.push(Star3.drawStar(context, Star3));
@@ -120,7 +124,7 @@ function render() {
       //Brazil
       const Star2 = new Star(530, 650, 35, 14, 5, 6, "#f06d06", "#fed8b1", 60);
 
-      //push the drawn star to the items list
+      //Push the drawn star to the items list.
       items.push(Star1.drawStar(context, Star1));
       items.push(Star2.drawStar(context, Star2));
       return items;
@@ -135,4 +139,5 @@ function render() {
     ]
   );
 }
+//Runs render() when the Document Object Model (DOM) content is loaded.
 window.addEventListener("DOMContentLoaded", render);

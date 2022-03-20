@@ -5,13 +5,13 @@ $compSecondaryColor: #6b4f4f;
 
 @import url(footer.css);
 @import url(navbar.css);
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 body {
@@ -336,10 +336,9 @@ img {
     height: 38vh;
   }
 
-  .Images{
+  .Images {
     height: 550px;
   }
-
 }
 
 @media screen and(max-width:780px) {
@@ -379,7 +378,7 @@ img {
     margin-bottom: 50px;
   }
 
-  .Images{
+  .Images {
     height: 500px;
   }
 }
@@ -441,7 +440,7 @@ img {
     width: 540px;
   }
 
-  .Images{
+  .Images {
     height: 450px;
   }
 }
@@ -504,7 +503,7 @@ img {
     padding-left: 23%;
   }
 
-  .Images{
+  .Images {
     height: 350px;
   }
 }
@@ -514,7 +513,7 @@ img {
     width: 325px;
   }
 
-  .mySlides {
+  .carouselImg {
     display: none;
   }
 
@@ -524,13 +523,13 @@ img {
     height: 100%;
   }
 
-  .Imgaes{
+  .Imgaes {
     height: 325px;
   }
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshowContainer {
   max-width: 96.7%;
   position: relative;
   margin: auto;
