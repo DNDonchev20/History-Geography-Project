@@ -168,13 +168,13 @@
 
       <div class="infoBoxContainer">
         <div class="europeButtons">
-          <button id="e39" onclick="switchMap('e39')">Europe 1939</button>
-          <button id="e45" onclick="switchMap('e45')">Europe 1945</button>
+          <button id="e39" onclick="switchMap('e39', 0)">Europe 1939</button>
+          <button id="e45" onclick="switchMap('e45', 0)">Europe 1945</button>
         </div>
 
         <div class="asiaButtons">
-          <button id="a39" onclick="switchMap('a39')">Asia 1939</button>
-          <button id="a45" onclick="switchMap('a45')">Asia 1945</button>
+          <button id="a39" onclick="switchMap('a39', 0)">Asia 1939</button>
+          <button id="a45" onclick="switchMap('a45', 0)">Asia 1945</button>
         </div>
 
         <!--popup windows-->
@@ -396,8 +396,8 @@
     <script src="scripts/popup.js"></script>
     <script src="scripts/popupText.js"></script>
     <script>
-      document.getElementById("e39").click();
-      document.getElementById("a39").click();
+      switchMap('e39',2);
+      switchMap('a39',1);
     </script>
   </body>
 </html>
