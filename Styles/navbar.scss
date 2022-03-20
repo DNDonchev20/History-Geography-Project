@@ -3,12 +3,15 @@ $compMainColor: #fff3e4;
 $secondaryColor: #483434;
 $compSecondaryColor: #6b4f4f;
 
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+
 header {
   background: $secondaryColor;
   text-align: center;
   position: fixed;
   z-index: 999;
   width: 100%;
+  font-family: 'Cardo', serif;
 }
 
 /*"hamburger span"*/

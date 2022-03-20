@@ -1,11 +1,12 @@
 @import url(footer.css);
 @import url(navbar.css);
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Cardo', serif;
 }
 
 body {

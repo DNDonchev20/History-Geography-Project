@@ -4,15 +4,16 @@ $secondaryColor: #483434;
 $compSecondaryColor: #6B4F4F;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 @import url(footer.css);
 @import url(navbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Cardo', serif;
   scroll-behavior: smooth;
 }
 

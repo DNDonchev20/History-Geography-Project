@@ -3,11 +3,13 @@ $compMainColor: #FFF3E4;
 $secondaryColor: #483434;
 $compSecondaryColor: #6B4F4F;
 
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Cardo', serif;
 }
 
 /*footer styling*/
@@ -20,7 +22,6 @@ $compSecondaryColor: #6B4F4F;
 	text-decoration: none;
     text-align: center;
 
-    font-family:  Roboto;
     font-size: 40px;
     font-weight: 900;
 
@@ -35,7 +36,6 @@ $compSecondaryColor: #6B4F4F;
     color: $compMainColor;
 
     text-decoration: none;
-    font-family:  Roboto;
     text-align: center;
     font-size: 20px;
     font-weight: 900;
